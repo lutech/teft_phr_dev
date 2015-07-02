@@ -44,7 +44,7 @@
 		<?php require "application/views/{$area}/{$page}.php";?>
 		</div>
         <!-- Main Footer -->
-        <?php// require 'footer.php'; ?>
+        <!--< ?php require 'footer.php'; ?> -->
         
         <!-- Main Scripts -->
 		<?php require 'scripts.php'; ?>
