@@ -1,0 +1,311 @@
+/* CSS Document */
+.no-class {
+  display: none;
+}
+@bg-imgage: url("../img/body-bg.png");
+html {
+  //background-color: #222222;
+  background-image: @bg-imgage;
+  height: 100%;
+}
+body{
+  padding-top: 240px;
+  opacity: 1 !important;
+  background-color: transparent;
+  background-image: @bg-imgage;
+}
+#main-nav {
+  top: 54px;
+  background-color:  transparent;
+  background-image:  @bg-imgage;
+}
+#head-nav {
+  margin-bottom: 0 !important;
+}
+#tab-nav {
+  margin-bottom: 0 !important;
+  min-height: 106px;
+  padding: 15px;
+  overflow: hidden;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0+80,0.15+100 */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.15) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(80%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.15))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.15) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.15) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.15) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.15) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#26000000',GradientType=0 ); /* IE6-9 */
+}
+#tab-nav-list {
+  margin-bottom: 0px;
+  padding: 0;
+  
+  li {
+
+    float: none;
+    margin: 0px 15px !important;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    a {
+      color: #625f6c;
+      margin: 0px !important;
+    }
+    a.selected {
+      color: #2494f2;
+    }
+    a.selected:after {
+      content: " ";
+      position: absolute;
+      bottom: -34px;
+      left: 50%;
+      margin-left: -13px;
+      width: 26px;
+      height: 26px;
+      background-image: url("../img/body-bg.png");
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}
+
+#bc-nav {
+  margin-bottom: 0 !important;
+  min-height: 80px;
+  padding: 5px;
+  overflow: hidden;
+}
+#main-footer {
+  margin-top: 100px;
+  padding: 40px 0px 30px 0px;
+}
+.modal-dialog {
+  width:800px;
+}
+.panel-group .panel {
+  overflow: visible;
+}
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+/*
+ * Side navigation
+ *
+ * Scrollspy and affixed enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+
+/* By default it's not affixed in mobile views, so undo that */
+.bs-sidebar.affix {
+  position: static;
+}
+
+/* First level of nav */
+.bs-sidenav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #f7f5fa;
+  border-radius: 5px;
+}
+
+/* All levels of nav */
+.bs-sidebar .nav > li > a {
+  display: block;
+  color: #716b7a;
+  padding: 5px 20px;
+}
+.bs-sidebar .nav > li > a:hover,
+.bs-sidebar .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #e5e3e9;
+  border-right: 1px solid #dbd8e0;
+}
+.bs-sidebar .nav > .active > a,
+.bs-sidebar .nav > .active:hover > a,
+.bs-sidebar .nav > .active:focus > a {
+  font-weight: bold;
+  color: #563d7c;
+  background-color: transparent;
+  border-right: 1px solid #563d7c;
+}
+
+/* Tabs Left CSS from Bootstrap 2.3*/
+.tabs-left>.nav-tabs {
+  float: left;
+  margin-right: 0px;
+  padding-right:0px;
+  border-right: 1px solid #ddd;
+}
+.tabs-below>.nav-tabs, .tabs-right>.nav-tabs, .tabs-left>.nav-tabs {
+  border-bottom: 0;
+}
+.tabs-left>.nav-tabs>li, .tabs-right>.nav-tabs>li {
+  float: none;
+  margin-bottom:0px;
+  margin-right: -1px;
+}
+.tabs-left>.nav-tabs .active>a, .tabs-left>.nav-tabs .active>a:hover, .tabs-left>.nav-tabs .active>a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+}
+.tabs-left>.nav-tabs>li>a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.tabs-left>.nav-tabs>li>a, .tabs-right>.nav-tabs>li>a {
+  min-width: 74px;
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+.tabs-left>.nav-tabs>li>a:hover, .tabs-left>.nav-tabs>li>a:focus {
+  border-color: #eee #ddd #eee #eee;
+}
+/* Nav: second level (shown on .active) */
+.bs-sidebar .nav .nav {
+  display: none; /* Hide by default, but at >768px, show it */
+  margin-bottom: 8px;
+}
+.bs-sidebar .nav .nav > li > a {
+  padding-top:    3px;
+  padding-bottom: 3px;
+  padding-left: 30px;
+  font-size: 90%;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+  .bs-sidebar .nav > .active > ul {
+    display: block;
+  }
+  /* Widen the fixed sidebar */
+  .bs-sidebar.affix,
+  .bs-sidebar.affix-bottom {
+    width: 213px;
+  }
+  .bs-sidebar.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+    top: 80px;
+  }
+  .bs-sidebar.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+  }
+  .bs-sidebar.affix-bottom .bs-sidenav,
+  .bs-sidebar.affix .bs-sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  /* Widen the fixed sidebar again */
+  .bs-sidebar.affix-bottom,
+  .bs-sidebar.affix {
+    width: 263px;
+  }
+}
+
+/* Google Map */
+#map-canvas {
+  height: 300px ;
+}
+
+/* Bootstrap Multiselect */
+.multiselect {
+  text-align: left;
+}
+.multiselect b.caret {
+  position: absolute;
+  top: 14px;
+  right: 8px;
+}
+
+/* Bootstrap Overrides */
+.navbar-inverse h1,
+.navbar-inverse h2,
+.navbar-inverse h3,
+.navbar-inverse h4,
+.navbar-inverse h5,
+.navbar-inverse .h1,
+.navbar-inverse .h2,
+.navbar-inverse .h3,
+.navbar-inverse .h4,
+.navbar-inverse .h5 {
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.navbar-inverse p {
+  color: #999;
+}
+
+.page-heading {
+  background: #eee;
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  overflow: hidden;
+}
+
+.page-heading h1,
+.page-heading .h3 {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.page-heading a.text-muted {
+  color: #999;
+  text-decoration: underline;
+}
+.page-heading a.text-muted:hover,
+.page-heading a.text-muted:focus {
+  color: #2a6496;
+  text-decoration: underline;
+}
+
+h1.row span{
+  display: inline-block;
+}
+
+.panel-heading h4,
+.panel-heading .h4  {
+  display: inline-block;
+}
