@@ -31,7 +31,7 @@ class MenuItem {
         $selectedIndicator = ($this->menuItemArea == $this->uri->segment(1) && $this->menuItemView == $this->uri->segment(2)) ? '<span class="offset-hidden js-selected-menu-item">selected</span>' : "";
         $returnFalse = ($this->menuItemClickable == false) ?  'return false;' : "";
         return  "
-                        <a class=\"list-group-item {$activeClass} {$hiddenClass}\" href=\"".base_url()."index.php/{$this->menuItemArea}/{$this->menuItemView}\" onclick=\"{$onClickFunctions} {$returnFalse}\" >
+                        <a class=\"{$activeClass} {$hiddenClass}\" href=\"".base_url()."index.php/{$this->menuItemArea}/{$this->menuItemView}\" onclick=\"{$onClickFunctions} {$returnFalse}\" >
                             {$this->menuItemLabel}
                             {$icon}
                             {$selectedIndicator}

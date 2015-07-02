@@ -1,6 +1,7 @@
 
 <script type="text/javascript">
-	<!--Initializ Google Map -->
+	<!-- Initialize Google Map -->
+
   	function initialize() {
     var mapOptions = {
       	center: new google.maps.LatLng(33.765449 , -89.792118),
@@ -28,6 +29,87 @@
 	
 	
   	$(document).ready(function() {
+        var mainNavTopPos = $('#main-nav').position();
+        var speed = 200;
+
+        (function(){
+            if ($('body').scrollTop() > 120 ) {
+                $('#main-nav').css({
+                    top: "-" + mainNavTopPos.top + "px"
+                });
+                $('body').attr("isHidden", "true");
+            }
+        })();
+
+        $(window).on('scroll resize', function(){
+            if ($('body').scrollTop() > 120 ) {
+                $('#main-nav').animate({
+                    top: "-" + mainNavTopPos.top + "px"
+                },speed);
+                $('body').attr("isHidden", "true");
+            } else if ($('body').scrollTop() <= 120 && $('body').attr('isHidden')){
+                $('#main-nav').animate({
+                    top: mainNavTopPos.top + "px"
+                },speed);
+                $('body').removeAttr("isHidden");
+            }
+        });
+
+        $("#head-nav").on("mouseover", function(){
+            var timer;
+
+            if (timer) {
+                clearTimeout(timer); //cancel the previous timer.
+                timer = null;
+            };
+            timer = setTimeout(function(){
+                if ($('body').scrollTop() > 120 && $('body').attr('isHidden')){
+                    $('#main-nav').animate({
+                        top: mainNavTopPos.top + "px"
+                    },speed);
+                    $('body').removeAttr("isHidden");
+                }
+            }, 500);
+
+        });
+
+
+        $("#head-nav").on("mouseout", function(){
+            if ($("#tab-nav:hover").length == 0){
+                var timer = null;
+                if (timer) {
+                    clearTimeout(timer); //cancel the previous timer.
+                    timer = null;
+                };
+                timer = setTimeout(function(){
+                    if ($('body').scrollTop() > 120){
+                        $('#main-nav').animate({
+                            top: "-" + mainNavTopPos.top + "px"
+                        },speed);
+                        $('body').attr("isHidden", "true");
+                    }
+                }, 500);
+
+            }
+        });
+        $("#tab-nav").on("mouseout", function(){
+            if ($("#main-nav:hover").length == 0){
+                var timer = null;
+                if (timer) {
+                    clearTimeout(timer); //cancel the previous timer.
+                    timer = null;
+                };
+                timer = setTimeout(function(){
+                    if ($('body').scrollTop() > 120 ){
+                        $('#main-nav').animate({
+                            top: "-" + mainNavTopPos.top + "px"
+                        },speed);
+                        $('body').attr("isHidden", "true");
+                    }
+                }, 500);
+
+            }
+        });
 		
 		<!-- Initialize Bootstrap Multiselect by: (http://davidstutz.github.io/bootstrap-multiselect/#getting-started) -->
     	$('.js-multiselect').multiselect({

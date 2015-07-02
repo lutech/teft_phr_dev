@@ -8,7 +8,7 @@
         header( "Location: $url" );
 	}
 
-    public function dashboard($area="home", $page="dashboard", $subpage="", $partial="", $tabnav = "home"){
+    public function dashboard($area="home", $page="dashboard", $subpage="", $partial="", $pagename = "Dashboard"){
         if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
         {
             show_404();
@@ -18,12 +18,14 @@
         $data['page'] = $page;
         $data['subpage'] = $subpage;
         $data['partial'] = $partial;
-        $data['tabnav'] = $tabnav;
+        $data['tabnav'] = $area;
+        $data['bcnav'] = $page;
+        $data['pagename'] = $pagename;
         $this->load->helper('url');
         $this->load->view("templates/master-layout.php", $data);
         }
 
-        public function myprofile($area="home", $page="myprofile", $subpage="", $partial="", $tabnav = "home"){
+        public function myprofile($area="home", $page="myprofile", $subpage="", $partial="", $pagename = "My Profile"){
             if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
             {
                 show_404();
@@ -33,12 +35,13 @@
             $data['page'] = $page;
             $data['subpage'] = $subpage;
             $data['partial'] = $partial;
-            $data['tabnav'] = $tabnav;
+            $data['tabnav'] = $area;
+            $data['pagename'] = $pagename;
             $this->load->helper('url');
             $this->load->view("templates/master-layout.php", $data);
         }
 
-        public function events($area="home", $page="events", $subpage="", $partial="", $tabnav = "home"){
+        public function events($area="home", $page="events", $subpage="", $partial="", $pagename = "Events"){
             if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
             {
                 show_404();
@@ -48,12 +51,14 @@
             $data['page'] = $page;
             $data['subpage'] = $subpage;
             $data['partial'] = $partial;
-            $data['tabnav'] = $tabnav;
+            $data['tabnav'] = $area;
+            $data['bcnav'] = $page;
+            $data['pagename'] = $pagename;
             $this->load->helper('url');
             $this->load->view("templates/master-layout.php", $data);
         }
 
-        public function messages($area="home", $page="messages", $subpage="", $partial="", $tabnav = "home"){
+        public function messages($area="home", $page="messages", $subpage="", $partial="", $pagename = "Messages"){
             if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
             {
                 show_404();
@@ -63,13 +68,15 @@
             $data['page'] = $page;
             $data['subpage'] = $subpage;
             $data['partial'] = $partial;
-            $data['tabnav'] = $tabnav;
+            $data['tabnav'] = $area;
+            $data['bcnav'] = $page;
+            $data['pagename'] = $pagename;
             $this->load->helper('url');
             $this->load->view("templates/master-layout.php", $data);
         }
 
 
-        public function notesanddocuments($area="home", $page="notesanddocuments", $subpage="", $partial="", $tabnav = "home"){
+        public function notesanddocuments($area="home", $page="notesanddocuments", $subpage="", $partial="", $pagename = "Notes & Documents"){
             if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
             {
                 show_404();
@@ -79,7 +86,9 @@
             $data['page'] = $page;
             $data['subpage'] = $subpage;
             $data['partial'] = $partial;
-            $data['tabnav'] = $tabnav;
+            $data['tabnav'] = $area;
+            $data['bcnav'] = $page;
+            $data['pagename'] = $pagename;
             $this->load->helper('url');
             $this->load->view("templates/master-layout.php", $data);
         }

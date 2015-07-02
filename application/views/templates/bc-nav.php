@@ -1,11 +1,12 @@
-<div id="bc-nav" role="navigation">
+<div id="bc-nav" class="page-head role="navigation">
     <div class="container">
-        <ul id="tab-nav-list" class="row text-center">
-<!--            --><?php
-//                if(!empty($bcnav)) {
-//                    require 'application/views/'.$page.'/shared/_BreadCrumbNavigationPartial.php';
-//                }
-//            ?>
-        </ul>
+        <h2><?php echo $pagename ?></h2>
+        <ol class="breadcrumb">
+            <?php
+            if(!empty($bcnav)) {
+                require 'application/views/'.$area.'/shared/_BreadCrumbNavigationPartial.php';
+            }
+            ?>
+        </ol>
     </div>
 </div>
