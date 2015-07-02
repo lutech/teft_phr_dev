@@ -8,7 +8,7 @@
         header( "Location: $url" );
 	}
 
-    public function serviceactivities($area="billing", $page="serviceactivities", $subpage="", $partial=""){
+    public function serviceactivities($area="billing", $page="serviceactivities", $subpage="", $partial="", $pagename = "Billing"){
         if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
         {
             show_404();
@@ -19,11 +19,12 @@
         $data['subpage'] = $subpage;
         $data['partial'] = $partial;
         $data['tabnav'] = $area;
+        $data['pagename'] = $pagename;
         $this->load->helper('url');
         $this->load->view("templates/master-layout.php", $data);
     }
 
-    public function serviceclaims($area="billing", $page="serviceclaims", $subpage="", $partial=""){
+    public function serviceclaims($area="billing", $page="serviceclaims", $subpage="", $partial="", $pagename = "Service Claims"){
         if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
         {
             show_404();
@@ -34,11 +35,12 @@
         $data['subpage'] = $subpage;
         $data['partial'] = $partial;
         $data['tabnav'] = $area;
+        $data['pagename'] = $pagename;
         $this->load->helper('url');
         $this->load->view("templates/master-layout.php", $data);
     }
 
-    public function servicebudget($area="billing", $page="servicebudget", $subpage="", $partial=""){
+    public function servicebudget($area="billing", $page="servicebudget", $subpage="", $partial="", $pagename = "Service Budget"){
         if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
         {
             show_404();
@@ -49,6 +51,7 @@
         $data['subpage'] = $subpage;
         $data['partial'] = $partial;
         $data['tabnav'] = $area;
+        $data['pagename'] = $pagename;
         $this->load->helper('url');
         $this->load->view("templates/master-layout.php", $data);
     }

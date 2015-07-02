@@ -23,7 +23,7 @@ class TabMenuItem {
         $returnFalse = ($this->tabMenuItemClickable == false) ?  'return false;' : "";
         $tabIcon = (!empty($this->tabMenuItemIcon)) ?  $this->tabMenuItemIcon : "";
 
-        return "<li class=\"col-sm-1\">
+        return "<li>
                     <a class=\"btn btn-default btn-block btn-rad {$activeClass}\" href=\"".base_url()."index.php/{$this->tabMenuItemArea}/{$this->tabMenuItemView}\" {$returnFalse}>
                         <span class=\"fa {$tabIcon} fa-3x\"></span><br/>
                         {$this->tabMenuItemLabel}
