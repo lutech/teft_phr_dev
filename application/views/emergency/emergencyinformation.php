@@ -2,7 +2,7 @@
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
-    <h1>Emergency Information</h1>
+    <h1><?php echo $pagename ?></h1>
 </div>
 
 <!-- Example row of columns -->
@@ -15,7 +15,7 @@
             <li>Emergency Contacts</li>
             <li>Medical Contacts</li>
             <li>Representatives</li>
-            <li>Service Providers</li>
+            <li>Emergency Backup Providers</li>
         </ul>
     </div>
     <div class="col-md-4">
