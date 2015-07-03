@@ -62,13 +62,21 @@ body{
     padding: 0;
     list-style: none;
     a {
-      color: #625f6c;
+      //color: #625f6c;
+      color: #888888;
       margin: 0px !important;
       position: relative;
     }
-    a.selected {
-      color: #2494f2;
-//      color: #FFA000;
+      a:hover {
+      color: #C671F7;
+      border: 1px solid #E0B2FA;
+    }
+    a.selected,
+    a.selected:hover {
+      //color: #2494f2;
+      //color: #02B1CF;
+      color: #A34ED4;
+      border: 2px solid #A34ED4;
     }
     a.selected:after {
       content: " ";
@@ -107,8 +115,8 @@ body{
   box-shadow: none;
   .container {
 //    border-bottom: 1px solid #E9E9E9;
-
-      border-bottom: 3px solid #FFA000;
+//    border-bottom: 3px solid #FFA000;
+    border-bottom: 3px solid #02B1CF;
   }
 
   h2 {

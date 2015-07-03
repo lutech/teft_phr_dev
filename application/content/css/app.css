@@ -66,12 +66,18 @@ body {
   list-style: none;
 }
 #tab-nav-list li a {
-  color: #625f6c;
+  color: #888888;
   margin: 0px !important;
   position: relative;
 }
-#tab-nav-list li a.selected {
-  color: #2494f2;
+#tab-nav-list li a:hover {
+  color: #C671F7;
+  border: 1px solid #E0B2FA;
+}
+#tab-nav-list li a.selected,
+#tab-nav-list li a.selected:hover {
+  color: #A34ED4;
+  border: 2px solid #A34ED4;
 }
 #tab-nav-list li a.selected:after {
   content: " ";
@@ -100,7 +106,7 @@ body {
   box-shadow: none;
 }
 #bc-nav .container {
-  border-bottom: 3px solid #FFA000;
+  border-bottom: 3px solid #02B1CF;
 }
 #bc-nav h2 {
   color: #555;
