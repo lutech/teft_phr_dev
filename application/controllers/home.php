@@ -76,6 +76,24 @@
         }
 
 
+        public function contacts($area="home", $page="contacts", $subpage="", $partial="", $pagename = "Contacts"){
+            if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
+            {
+                show_404();
+            }
+
+            $data['area'] = $area;
+            $data['page'] = $page;
+            $data['subpage'] = $subpage;
+            $data['partial'] = $partial;
+            $data['tabnav'] = $area;
+            $data['bcnav'] = $page;
+            $data['pagename'] = $pagename;
+            $this->load->helper('url');
+            $this->load->view("templates/master-layout.php", $data);
+        }
+
+
         public function notesanddocuments($area="home", $page="notesanddocuments", $subpage="", $partial="", $pagename = "Notes & Documents"){
             if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
             {

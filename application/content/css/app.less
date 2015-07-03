@@ -32,11 +32,13 @@ body{
 }
 #head-nav {
   margin-bottom: 0 !important;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
 }
 #tab-nav {
   margin-bottom: 0 !important;
   min-height: 106px;
   overflow: hidden;
+//  border-bottom: 3px solid #FFA000;
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0+80,0.15+100 */
   background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.15) 100%); /* FF3.6+ */
@@ -66,12 +68,13 @@ body{
     }
     a.selected {
       color: #2494f2;
+//      color: #FFA000;
     }
     a.selected:after {
       content: " ";
       position: absolute;
-      bottom: -34px;
       left: 50%;
+      bottom: -34px;
       margin-left: -13px;
       width: 26px;
       height: 26px;
@@ -81,6 +84,13 @@ body{
       -o-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
+//      bottom: -24px;
+//      margin-left: -26px;
+//      width: 0;
+//      height: 0;
+//      border-left: 26px solid transparent;
+//      border-right: 26px solid transparent;
+//      border-bottom: 20px solid #FFA000;
     }
   }
 }
@@ -96,7 +106,9 @@ body{
   -moz-box-shadow: none;
   box-shadow: none;
   .container {
-    border-bottom: 1px solid #E9E9E9;
+//    border-bottom: 1px solid #E9E9E9;
+
+      border-bottom: 3px solid #FFA000;
   }
 
   h2 {
