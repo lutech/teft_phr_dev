@@ -4,11 +4,12 @@
 		
 	public function index() {
         $this->load->helper('url');
-        $url = base_url().'index.php/ltss/questionnaires';
+        $url = base_url().'index.php/ltss/overview';
         header( "Location: $url" );
 	}
 
-    public function questionnaires($area="ltss", $page="questionnaires", $subpage="", $partial="", $pagename = "Questionnaires"){
+
+    public function overview($area="ltss", $page="overview", $subpage="", $partial="", $pagename = "Overview"){
         if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
         {
             show_404();
@@ -23,7 +24,6 @@
         $this->load->helper('url');
         $this->load->view("templates/master-layout.php", $data);
     }
-
     public function services($area="ltss", $page="services", $subpage="", $partial="", $pagename = "Services"){
         if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
         {
@@ -40,7 +40,7 @@
         $this->load->view("templates/master-layout.php", $data);
     }
 
-    public function applicationforms($area="ltss", $page="applicationforms", $subpage="", $partial="", $pagename = "Application Forms"){
+    public function programforms($area="ltss", $page="programforms", $subpage="", $partial="", $pagename = "Program Forms"){
         if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
         {
             show_404();

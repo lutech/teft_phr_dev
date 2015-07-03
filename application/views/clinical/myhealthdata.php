@@ -2,7 +2,7 @@
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
-    <h1>My Health Data</h1>
+    <h1><?php echo $pagename ?></h1>
 </div>
 
 <!-- Example row of columns -->
@@ -13,7 +13,6 @@
                 <ul>
                     <li>Weight</li>
                     <li>Height</li>
-                    <li>Physical Traits</li>
                 </ul>
             </li>
             <li>Conditions/Problems</li>

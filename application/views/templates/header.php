@@ -58,6 +58,7 @@
                 'clinical' => 'Clinical',
                 'billing' => 'Billing',
                 'ltss' => 'LTSS',
+                'helpandinfo' => 'Help & Info',
                 'emergency' => 'Emergency'
 								);
 			}
@@ -73,6 +74,7 @@
             'clinical' => 'Clinical',
             'billing' => 'Billing',
             'ltss' => 'LTSS',
+            'helpandinfo' => 'Help & Info',
             'emergency' => 'Emergency'
 								);
 		}
@@ -86,7 +88,7 @@
         <div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="col-sm-3">
+                    <div class="col-sm-2">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                 <span class="sr-only">Toggle navigation</span>
@@ -98,7 +100,7 @@
                         </div>
                     </div>
                     <div class="navbar-collapse collapse">
-                <div class="col-sm-6 text-center">
+                <div class="col-sm-8 text-center">
                     <ul class="nav navbar-nav" style="float: none; display: inline-block">
                         <?php
 
@@ -113,8 +115,8 @@
                         ?>
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <ul class="nav navbar-nav navbar-right">
+                <div class="col-sm-2">
+                    <ul class="nav navbar-nav navbar-right" style="display: none">
                         <?php /*?><?php
 
 				$mainlinks = array(
