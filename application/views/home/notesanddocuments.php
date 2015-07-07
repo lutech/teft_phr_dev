@@ -1,20 +1,8 @@
-
-
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-    <h1><?php echo $pagename ?></h1>
-</div>
-
-<!-- Example row of columns -->
 <div class="row">
-    <div class="col-md-4">
-        <ul>
-            <li>Attachments (Uploaded Documents)</li>
-            <li>Notes (WYSIWYG Editor)</li>
-        </ul>
+    <div class="col-md-5">
+        <?php require 'notesanddocuments/_NotesContent.php'; ?>
     </div>
-    <div class="col-md-4">
-    </div>
-    <div class="col-md-4">
+    <div class="col-md-7">
+        <?php require 'notesanddocuments/_DocumentsContent.php'; ?>
     </div>
 </div>

@@ -1,3 +1,12 @@
+@import 'bootstrap/bootstrap.less';
+@import 'style.less';
+@import 'prettyform.less';
+
+@app-theme-color : #2B3F5A;
+@app-secondary-hover-bgcolor: #CCC;
+@app-secondary-active-bgcolor: #453162;
+@app-secondary-color: #4C376C;
+
 /* CSS Document */
 .no-class {
   display: none;
@@ -8,11 +17,29 @@ html {
   background-image: @bg-imgage;
   height: 100%;
 }
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight:normal !important;
+}
+p{
+  font-size: 14px;
+}
+
+.ui-hide,
+.offset-hidden {
+  position: absolute !important;
+  left: -999999px !important;
+  height: 0px !important;
+  top: 0px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
 body{
-  padding-top: 240px;
+  padding-top: 50px;
   opacity: 1 !important;
   background-color: transparent;
   background-image: @bg-imgage;
+  font-size: 14px;
 }
 @media (max-width: 768px) {
   body{
@@ -28,15 +55,34 @@ body{
   background-image:  @bg-imgage;
   padding: 0;
   margin: 0;
-  z-index: 0;
+  z-index: 5;
+}
+#main-nav.main-nav-fixed {
+  position: fixed;
+  top: -52px;
+}
+#main-nav.main-nav-fixed + #main-content {
+  margin-top: 186px;
 }
 #head-nav {
   margin-bottom: 0 !important;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  background:  @app-theme-color !important;
+  .nav.navbar-nav {
+    float: none;
+    display: inline-block;
+    height: 45px;
+    li:not(.active) {
+      a:hover {
+        background: #31527E;
+      }
+    }
+  }
 }
 #tab-nav {
   margin-bottom: 0 !important;
   min-height: 106px;
+  min-height: 0px;
   overflow: hidden;
 //  border-bottom: 3px solid #FFA000;
 
@@ -48,6 +94,8 @@ body{
   background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.15) 100%); /* IE10+ */
   background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0.15) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#26000000',GradientType=0 ); /* IE6-9 */
+
+  background: #817793;
 }
 #tab-nav-list {
   margin-bottom: 0px;
@@ -59,24 +107,42 @@ body{
     display: inline-block;
     width: 160px;
     margin: 15px !important;
+    margin: 0px !important;
     padding: 0;
     list-style: none;
     a {
       //color: #625f6c;
       color: #888888;
+      color: #E0E0E0;
+      background: transparent;
       margin: 0px !important;
       position: relative;
+      border: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
     }
       a:hover {
-      color: #C671F7;
-      border: 1px solid #E0B2FA;
+        //color: #C671F7;
+        //border: 1px solid #E0B2FA;
+        //color: #51b9cf;
+        //border: 1px solid #51b9cf;
+        //color: #48b2f2;
+        background-color: #73648E;
+        border: 2px solid #48b2f2;
+        border: none;
     }
     a.selected,
     a.selected:hover {
-      //color: #2494f2;
+      color: #2494f2;
+      color: #E0E0E0;
+      //border: 2px solid #2494f2;
+      background: #5D4C7C;
       //color: #02B1CF;
-      color: #A34ED4;
-      border: 2px solid #A34ED4;
+      //border: 2px solid #02B1CF;
+      //color: #A34ED4;
+      //border: 2px solid #A34ED4;
+      border: none;
     }
     a.selected:after {
       content: " ";
@@ -105,7 +171,7 @@ body{
 
 #bc-nav {
   margin-bottom: 0 !important;
-  min-height: 80px;
+  //min-height: 80px;
   padding: 5px;
   overflow: hidden;
   background: transparent;
@@ -115,13 +181,45 @@ body{
   box-shadow: none;
   .container {
 //    border-bottom: 1px solid #E9E9E9;
-//    border-bottom: 3px solid #FFA000;
-    border-bottom: 3px solid #02B1CF;
+    border-bottom: 3px solid #FFA000;
+    //border-bottom: 3px solid #02B1CF;
   }
 
   h2 {
     color: #555;
   }
+
+  .breadcrumb {
+    list-style: none !important;
+    padding: 10px 0;
+    li {
+
+      a {
+        color: #777;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      a.selected{
+        color: #2494F2;
+        text-decoration: none !important;
+        cursor: default;
+      }
+      ul {
+        list-style: none !important;
+        display: inline-block;
+        margin: 0 5px;
+        padding: 0;
+        li:before {
+          color: #ccc;
+          content: "/\00a0";
+          font-size: 24px;
+        }
+      }
+    }
+
+  }
+
 }
 #main-footer {
   margin-top: 100px;
@@ -212,7 +310,38 @@ body{
   background-color: transparent;
   border-right: 1px solid #563d7c;
 }
+.nav-tabs {
+  background-color: #E4E4E4;
+  color: @app-secondary-color;
 
+  li {
+    margin: 0;
+    a {
+      color: inherit;
+      border-radius: 0 !important;
+      border: 0 !important;
+    }
+    a:hover,
+    a:focus{
+      color: @app-secondary-color;
+      background: @app-secondary-hover-bgcolor;
+    }
+  }
+  li.active {
+    a,
+    a:hover,
+    a:focus {
+      color: white;
+      background-color: @app-secondary-active-bgcolor;
+      cursor: default;
+    }
+    a:after,
+    a:hover:after,
+    a:focus:after {
+      background-color: transparent;
+    }
+  }
+}
 /* Tabs Left CSS from Bootstrap 2.3*/
 .tabs-left>.nav-tabs {
   float: left;
@@ -257,6 +386,9 @@ body{
   font-size: 90%;
 }
 
+.table-responsive .dataTables_wrapper .row {
+  margin: 0;
+}
 /* Show and affix the side nav when space allows it */
 @media (min-width: 992px) {
   .bs-sidebar .nav > .active > ul {
@@ -349,7 +481,144 @@ h1.row span{
   display: inline-block;
 }
 
+//Form Elements
+
+.fieldset-container-one {
+  .form-horizontal;
+  //.group-border-dashed;
+  .pretty-form;
+}
+
 .panel-heading h4,
-.panel-heading .h4  {
+.panel-heading .h4 {
+  display: block;
+}
+.panel-heading {
+  .panel-title {
+    a {
+      font-size: 16px;
+    }
+  }
+}
+.form-toolbar {
+  background-image: @bg-imgage;
+  z-index: 1;
+  .nav-tabs  {
+    li {
+      .toolbar-button-label {
+        display: block;
+      }
+    }
+  }
+}
+.form-toolbar.container {
+  margin-left: -30px;
+}
+.form-toolbar.form-toolbar-fixed {
+  position: fixed;
+  top: 132px;
+  .block-flat {
+    margin-bottom: 20px;
+  }
+  .nav-tabs  {
+    li {
+      .toolbar-button-label {
+        display: inline-block;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+.form-toolbar.form-toolbar-fixed + .content{
+  margin-top: 165px;
+}
+
+.cl-mcont,
+table tbody td{
+  font-size: 14px;
+  font-weight: normal;
+}
+
+
+/* Bootstrap Overrides
+================================================================================================================================================*/
+
+.accordion-heading h2,
+.accordion-heading .h2,
+.accordion-heading h3,
+.accordion-heading .h3,
+.panel-heading h2,
+.panel-heading .h2,
+.panel-heading h3,
+.panel-heading .h3
+{
+  margin: 0;
+}
+
+.accordion-heading a
+{
+  padding: 8px 50px 8px 15px !important;
+}
+
+.accordion-heading a,
+.panel-heading a
+{
+  text-decoration: none;
+  display: block;
+  color: #0D80BF;
+  position: relative;
+}
+
+.accordion-heading a:hover,
+.panel-heading a:hover
+{
+  text-decoration: none;
+  color: #0088cc;
+}
+
+.accordion-inner {
+  padding: 9px 15px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.accordion-body {
+  -webkit-box-shadow: none;
+  -moz-box-shadow:none;
+  box-shadow: none;
+}
+
+.accordion.accordion-semi .panel-heading a {
+  background-color: inherit;
+  color: inherit;
+  border-bottom: 1px solid #ddd;
+}
+
+/* For use with Bootstraps default Accordions.*/
+
+.panel-arrow
+{
+  font-family: 'entypo';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
   display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  line-height: 1em;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -11px;
+}
+
+.collapsed .panel-arrow:before
+{
+  content: '\e767';
+}
+
+.panel-arrow:before
+{
+  content: "\e764";
 }

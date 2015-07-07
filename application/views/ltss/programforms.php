@@ -9,6 +9,7 @@
 <div class="row">
     <div class="col-md-4">
         <ul>
+            <li>CARE Assessment</li>
             <li>Plan of Care</li>
             <li>Informed Choice</li>
             <li>Bill of Rights</li>
