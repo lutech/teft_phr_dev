@@ -39,12 +39,14 @@
                     </a>
                 </li>
             </ul>
-            <div class="block-flat header">
-                <h1>My Profile</h1>
+            <div class="block app-block">
+                <div class="header">
+                    <h1>My Profile</h1>
+                </div>
             </div>
         </div>
         <div class="content">
-            <form id="myprofile" class="panel-group accordion accordion-semi pretty-form form-disabled">
+            <form id="myprofile" class="panel-group accordion accordion-semi genericform-style pretty-form form-disabled">
                 <?php require '_MyProfileContent.php'; ?>
             </form>
         </div>

@@ -21,10 +21,10 @@
             </li>
         </ul>
         <div class="block">
-            <div class="header">
+            <div class="header no-border">
                 <h1>Lab Results</h1>
             </div>
-            <div class="content">
+            <div class="content no-padding">
                 <?php require "_LabResultsContent.php" ?>
             </div>
         </div>

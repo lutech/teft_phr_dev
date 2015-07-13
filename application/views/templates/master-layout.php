@@ -3,6 +3,13 @@
 	<head>
 		<title><?php echo "Information and Referral - {$page}" ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/fonts/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/fonts/webfont-medical-icons/wfmi-style.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/fonts/fontsaddict-medical/Fontsaddict.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/css/entypo.css">
+
 		<!-- CSS -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'>
@@ -18,10 +25,6 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/css/app.css">
 
 
-        <!-- Fonts -->
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/fonts/font-awesome/css/font-awesome.css">
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/fonts/webfont-medical-icons/css/wfmi-style.css">
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/css/entypo.css">
 
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -61,7 +64,7 @@
 		<?php require 'header.php'; ?>
         <div id="main-nav" class="row" >
             <?php require 'tab-nav.php'; ?>
-            <?php require 'bc-nav.php'; ?>
+<!--            --><?// php require 'bc-nav.php'; ?>
         </div>
 		<div id="main-body" class="container cl-mcont">
 			<!-- Main Content -->

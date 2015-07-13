@@ -31,7 +31,7 @@
 		//---------------------------------------
 		
 		
-		if (isset($_COOKIE['user'])){
+		if (isset($_COOKIE['teftuser'])){
 
 
 			//PUBLIC MEMBER ACCESS
