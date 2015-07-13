@@ -19,6 +19,7 @@
         $data['subpage'] = $subpage;
         $data['partial'] = $partial;
         $data['tabnav'] = $area;
+        $data['bcnav'] = $page;
         $data['pagename'] = $pagename;
         $this->load->helper('url');
         $this->load->view("templates/master-layout.php", $data);
@@ -35,6 +36,7 @@
         $data['subpage'] = $subpage;
         $data['partial'] = $partial;
         $data['tabnav'] = $area;
+        $data['bcnav'] = $page;
         $data['pagename'] = $pagename;
         $this->load->helper('url');
         $this->load->view("templates/master-layout.php", $data);
@@ -51,6 +53,7 @@
         $data['subpage'] = $subpage;
         $data['partial'] = $partial;
         $data['tabnav'] = $area;
+        $data['bcnav'] = $page;
         $data['pagename'] = $pagename;
         $this->load->helper('url');
         $this->load->view("templates/master-layout.php", $data);
@@ -67,6 +70,7 @@
         $data['subpage'] = $subpage;
         $data['partial'] = $partial;
         $data['tabnav'] = $area;
+        $data['bcnav'] = $page;
         $data['pagename'] = $pagename;
         $this->load->helper('url');
         $this->load->view("templates/master-layout.php", $data);
