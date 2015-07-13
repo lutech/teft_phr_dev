@@ -3,9 +3,14 @@
 @import 'prettyform.less';
 
 @app-theme-color : #2B3F5A;
+//@app-theme-color : #2D3E7A;
 @app-secondary-hover-bgcolor: #CCC;
+@app-secondary-default-bgcolor: #817793;
+@app-secondary-base-color: #5D4C7C;
 @app-secondary-active-bgcolor: #453162;
 @app-secondary-color: #4C376C;
+@app-page-heading-color: #FFA000;
+@app-emergency-red-bgcolor: #AF1717;
 
 /* CSS Document */
 .no-class {
@@ -121,6 +126,7 @@ body{
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
     }
       a:hover {
         //color: #C671F7;
@@ -181,7 +187,7 @@ body{
   box-shadow: none;
   .container {
 //    border-bottom: 1px solid #E9E9E9;
-    border-bottom: 3px solid #FFA000;
+    //border-bottom: 3px solid #FFA000;
     //border-bottom: 3px solid #02B1CF;
   }
 
@@ -306,13 +312,14 @@ body{
 .bs-sidebar .nav > .active:hover > a,
 .bs-sidebar .nav > .active:focus > a {
   font-weight: bold;
-  color: #563d7c;
+  color: @app-secondary-base-color;
   background-color: transparent;
   border-right: 1px solid #563d7c;
 }
 .nav-tabs {
   background-color: #E4E4E4;
-  color: @app-secondary-color;
+  color: @app-secondary-base-color;
+  border: 0 !important;
 
   li {
     margin: 0;
@@ -333,6 +340,7 @@ body{
     a:focus {
       color: white;
       background-color: @app-secondary-active-bgcolor;
+      background-color: @app-secondary-base-color;
       cursor: default;
     }
     a:after,
@@ -484,7 +492,7 @@ h1.row span{
 //Form Elements
 
 .fieldset-container-one {
-  .form-horizontal;
+  //.form-horizontal;
   //.group-border-dashed;
   .pretty-form;
 }
@@ -540,6 +548,29 @@ table tbody td{
   font-weight: normal;
 }
 
+
+.app-block.app-heading-block {
+  border-radius: 0 !important;
+  .header {
+    border-radius: 0 !important;
+    border-bottom: 3px solid @app-secondary-default-bgcolor;
+    background: @app-secondary-active-bgcolor;
+    color: #E0E0E0
+  }
+}
+
+.app-block.app-emergency-block {
+  .header {
+    color: white;
+    background: @app-emergency-red-bgcolor;
+
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: bold !important;
+    }
+  }
+
+}
 
 /* Bootstrap Overrides
 ================================================================================================================================================*/
@@ -621,4 +652,121 @@ table tbody td{
 .panel-arrow:before
 {
   content: "\e764";
+}
+
+//Table styling
+
+.search-results-table
+{
+  border: 1px solid #dddddd;
+  border-top: none;
+}
+
+.search-results-table tr
+{
+  border: none;
+}
+
+.search-results-table td
+{
+  border: none !important;
+  border-top: 1px solid #dddddd !important;
+  padding: 8px 15px !important;
+}
+
+
+table.table-minimalist th
+{
+  background: #e6e6e6;
+  color: #444;
+  border-right: none;
+}
+
+
+table.table-minimalist td,
+table.table-striped.table-minimalist td,
+table.table-striped.table-minimalist tr:nth-child(odd) td
+{
+  background: transparent;
+  border-right: none;
+}
+
+table.table-striped.table-minimalist tr:nth-child(even) td
+{
+  background: #FDFDFD;
+}
+
+table.table-minimalist th.actions
+{
+  text-align: right;
+}
+
+table.table-minimalist th.actions span
+{
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+table.app-table {
+  caption {
+    text-transform: uppercase;
+  }
+  thead {
+    tr {
+      th {
+        font-size: 15px;
+        font-weight: 600;
+        background: #817793;
+        color: white;
+      }
+    }
+  }
+}
+.valign-middle {
+  vertical-align: middle !important;
+}
+
+//Icon Overrides
+.fa-comment-o.app-icon-report-problem:after {
+  content: "\f12a";
+  font-size: 50%;
+  position: absolute;
+  left: 42%;
+  top: 25%;
+  color: inherit
+}
+
+// Fontsaddict-Medical Overrides
+[class^="icon-"]:not([class^="icon-i"]):before, [class*=" icon-"]:not([class*=" icon-i"]):before,
+[class^="icon-"]:not([class^="icon-i"]):after, [class*=" icon-"]:not([class*=" icon-i"]):after {
+  margin-left: 0;
+  font-size: inherit;
+}
+
+//ltss overrides
+.genericform-style {
+
+  label,
+  .label {
+    display: inline-block;
+    width: 35%;
+    box-sizing: border-box;
+    color: rgb(85, 85, 85);
+    cursor: default;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    height: 21px;
+    line-height: 21px;
+    margin-bottom: 7px;
+    text-align: left;
+    white-space: normal;
+    vertical-align: middle;
+  }
+  input[type=radio] + label {
+    width: auto;
+  }
 }
