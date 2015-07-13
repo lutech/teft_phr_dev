@@ -1,5 +1,5 @@
 
-        <table id="dataTable" class="dataTable table table-bordered table-hover">
+        <table class="app-table">
             <thead>
             <tr>
                 <th>
