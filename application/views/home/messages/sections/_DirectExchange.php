@@ -1,10 +1,9 @@
 <div class="page-aside email col-md-3">
-    <div class="fixed nano nscroller">
+    <div class="nano nscroller">
         <div class="content">
-            <div class="header">
+            <div class="">
                 <button data-target=".mail-nav" data-toggle="collapse" type="button" class="navbar-toggle"><span class="fa fa-chevron-down"></span></button>
-                <h2 class="page-title">Messages</h2>
-                <p class="description">Direct Exchange Network</p>
+                <p class="description">DIRECT Exchange Network</p>
             </div>
             <div class="mail-nav collapse">
                 <ul class="nav nav-pills nav-stacked">

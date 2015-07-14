@@ -1,100 +1,60 @@
-<fieldset class="fieldset-container-one">
-    <legend class="legend-header-one">Client Information</legend>
-    <div class="form-group">
-        <label class="complete-required">Last Name:</label>
-        <input type="text" value="Smith"/>
+<div class="row">
+    <div class="col-md-2 text-right">
+        <div class="profile-picture">
+            <span class="fa fa-user"></span>
+        </div>
     </div>
-    <div class="form-group">
-        <label class="complete-required">First Name:</label>
-        <input type="text" value="Cicio"/>
+    <div class="col-md-8">
+        <div class="col-md-12">
+            <span class="h2">Cicio Smith, Sr.</span>
+            <hr/>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <address>
+                    <span class="app-read-label">Date of Birth</span>
+                    <span class="app-read-data">08/21/1952</span>
+                </address>
+            </div>
+            <div class="col-md-6">
+                <address>
+                    <span class="app-read-label">SSN#</span>
+                    <span class="app-read-data">***-**-1188</span>
+                </address>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <address>
+                    <span class="app-read-label">Current Address</span>
+                    <span class="app-read-data">2190 Springs Rd. <br/>Aurora CO, 80010</span>
+                </address>
+            </div>
+            <div class="col-md-6">
+                <address>
+                    <span class="app-read-label">Address Type</span>
+                    <span class="app-read-data">Facility <small class="text-muted">(New Haven)</small></span>
+                </address>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <address>
+                    <span class="app-read-label">Primary Phone #</span>
+                    <span class="app-read-data">(720) 859-8799 <small class="text-muted">(Home)</small></span>
+                </address>
+            </div>
+            <div class="col-md-6">
+                <address>
+                    <span class="app-read-label">Primary Email</span>
+                    <span class="app-read-data">c.smith@yipee.com</span>
+                </address>
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <label class="complete-required">Middle Name:</label>
-        <input type="text" value="Alfred"/>
+    <div class="col-md-2 text-right">
+        <button class="btn btn-small btn-primary md-trigger" role="button" data-modal="editDemographics">
+            <span class="fa fa-pencil"></span>&nbsp;&nbsp;Edit
+        </button>
     </div>
-    <div class="form-group">
-        <label>Preferred Name:</label>
-        <input type="text" value="Cicio"/>
-    </div>
-    <div class="form-group">
-        <label >Suffix:</label>
-        <input type="text"/>
-    </div>
-    <div class="form-group">
-        <label class="complete-required">Date of Birth:</label>
-        <input type="text" value="01/01/1950"/>
-    </div>
-    <div class="form-group">
-        <label class="complete-required">Gender:</label>
-        <select>
-            <option value="0" checked>Male</option>
-            <option value="1" checked>Female</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label>Race:</label>
-        <input type="text" value="Caucasian"/>
-    </div>
-    <div class="form-group">
-        <label class="complete-required">Please Specify Other Race:</label>
-        <textarea class="comments-textarea"></textarea>
-    </div>
-    <div class="form-group">
-        <label class="complete-required">Hispanic?</label>
-        <select>
-            <option value="0">Yes</option>
-            <option value="1" checked>No</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label class="complete-required">Jurisdiction:</label>
-        <select>
-            <option value="0" checked>Baltimore</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label>Moving to Jurisdiction:</label>
-        <input type="text" value=""/>
-    </div>
-    <div class="form-group">
-        <label>Specify County:</label>
-        <input type="text"/>
-    </div>
-</fieldset>
-<fieldset class="fieldset-container-one">
-    <legend class="legend-header-one">Additional Information</legend>
-    <div class="form-group">
-        <label>Client Identifier:</label>
-        <input type="text" value="MD49384JD4830"/>
-    </div>
-    <div class="form-group">
-        <label class="complete-required">Social Security:</label>
-        <input type="text" value="938-34-9583"/>
-    </div>
-    <div class="form-group">
-        <label>Medicare #</label>
-        <input type="text" value="68434684684"/>
-    </div>
-    <div class="form-group">
-        <label>Marital Status:</label>
-        <input type="text" value="Married"/>
-    </div>
-    <div class="form-group">
-        <label>Primary Language:</label>
-        <select class="readonly">
-            <option value="0" checked>English</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label>Specify Language :</label>
-        <textarea class="comments-textarea"></textarea>
-    </div>
-    <div class="form-group">
-        <label>Date of Death:</label>
-        <input type="text"/>
-    </div>
-    <div class="form-group">
-        <label>Facility Name:</label>
-        <input type="text" value="New Haven"/>
-    </div>
-</fieldset>
+</div>

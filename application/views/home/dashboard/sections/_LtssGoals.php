@@ -2,10 +2,10 @@
     <div class="white-box padding">
         <div class="row info">
             <div>
-                <h3>Your Goals</h3>
+                <h2><span class="fa fa-trophy"></span>&nbsp;Your Goals</h2>
             </div>
             <div>
-                <div id="com_stats" style="height:98px;"></div>
+                <div id="ltssGoals" style="height:98px;"></div>
             </div>
         </div>
     </div>

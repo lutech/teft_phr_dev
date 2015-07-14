@@ -1,27 +1,60 @@
-<div data-step="3"
-     data-intro="&lt;strong&gt;Unique Styled Plugins&lt;/strong&gt; &lt;br/&gt; We put love in every detail to give a great user experience!."
-     class="content blue-chart">
-    <div id="site_statistics" style="height:180px;"></div>
-</div>
-<div class="content">
+<div class="content no-padding">
     <div class="stat-data">
-        <div class="stat-blue">
-            <h2>1,254</h2><span>Total Sales</span>
+        <div class="blue-chart">
+            <div id="weightData" style="height:152px;"></div>
         </div>
     </div>
     <div class="stat-data">
         <div class="stat-number">
             <div>
-                <h2>83</h2>
+                <h2>174</h2>
             </div>
-            <div>Total hits<br><span>(Daily)</span></div>
+            <div>lbs <br/><span>(Most Recent)</span></div>
         </div>
-        <div class="stat-number">
+        <div class="stat-number text-muted">
             <div>
-                <h2>57</h2>
+                <h2 style="color: #777"><i class="fa fa-trophy" style="color: #777"></i>170</h2>
             </div>
-            <div>Views<br><span>(Daily)</span></div>
+            <div>lbs <br/><span>(Target Weight)</span></div>
         </div>
     </div>
     <div class="clear"></div>
+</div>
+<div class="content no-padding">
+    <table class="blue">
+        <thead>
+        <tr>
+            <th>Last 5</th>
+            <th>Source</th>
+            <th>Weight</th>
+        </tr>
+        </thead>
+        <tbody class="no-border-x">
+        <tr>
+            <td>06/10/2015</td>
+            <td>Dr. Paulsen</td>
+            <td>174<small class="text-muted">&nbsp;lbs</small></td>
+        </tr>
+        <tr>
+            <td>05/28/2015</td>
+            <td>Cardiology Offices of Adamstown</td>
+            <td>173<small class="text-muted">&nbsp;lbs</small></td>
+        </tr>
+        <tr>
+            <td>05/21/2015</td>
+            <td>Manually Entered</td>
+            <td>174<small class="text-muted">&nbsp;lbs</small></td>
+        </tr>
+        <tr>
+            <td>05/01/2015</td>
+            <td>Cardiology Offices of Adamstown</td>
+            <td>174<small class="text-muted">&nbsp;lbs</small></td>
+        </tr>
+        <tr>
+            <td>04/24/2015</td>
+            <td>Cardiology Offices of Adamstown</td>
+            <td>175<small class="text-muted">&nbsp;lbs</small></td>
+        </tr>
+        </tbody>
+    </table>
 </div>

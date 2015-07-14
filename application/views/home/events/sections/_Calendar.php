@@ -11,8 +11,9 @@
         <div class="header">
             <h2>Event Calendar</h2>
         </div>
-        <div class="content">
-            <div id="calendar"></div>
+        <br/>
+        <div class="content no-padding">
+            <div id="eventCalendar"></div>
         </div>
     </div>
 </div>

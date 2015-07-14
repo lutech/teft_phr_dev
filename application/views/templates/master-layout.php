@@ -22,6 +22,8 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/css/toggles.css">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/js/lib/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/js/lib/jquery.fullcalendar/fullcalendar.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/js/lib/jquery.gritter/css/jquery.gritter.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/js/lib/jquery.niftymodals/css/component.css">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/css/app.css">
 
 
@@ -55,6 +57,8 @@
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/lib/jquery.flot/jquery.flot.resize.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/lib/moment.js/min/moment.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/lib/jquery.fullcalendar/fullcalendar.js"></script>
+        <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/lib/jquery.gritter/js/jquery.gritter.min.js"></script>
+        <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/lib/jquery.niftymodals/js/jquery.modalEffects.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&"></script>
 		
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
@@ -70,14 +74,22 @@
 			<!-- Main Content -->
 		<?php require "application/views/{$area}/{$page}.php";?>
 		</div>
+
+
         <!-- Main Footer -->
         <!--< ?php require 'footer.php'; ?> -->
         
         <!-- Main Scripts -->
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/cleanzone.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/page-data-tables.js"></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/page-dashboard.js"></script>
+        <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/home-dashboard.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/page-calendar.js"></script>
-		<?php require 'scripts.php'; ?>
+		<?php
+        require 'scripts.php';
+
+        if (!empty($Script)) {
+            echo $Script;
+        }
+        ?>
 	</body>
 </html>

@@ -30,9 +30,17 @@
 	
   	$(document).ready(function() {
         App.init();
-        App.pageCalendar();
         App.dataTables();
-        App.dashboard();
+
+
+        $('[data-trigger-form-save]').on("click", function(){
+            $.extend($.gritter.options, { position: 'bottom-right' });
+            $.gritter.add({
+                title: 'Success',
+                text: 'Your form has been saved.',
+                class_name: 'success'
+            });
+        });
 
 //        function fixPosMainNav(){
 //            $('#main-nav').addClass("main-nav-fixed");
@@ -221,12 +229,29 @@
             });
         }
     }
+
+    function formSetUp(form) {
+        checkFormEditability(form);
+        $(form).find("[data-trigger-form-save]").each(function(){
+            var parent = $(this).parent("li");
+            $(parent).hide();
+            $(parent).attr("form-tab", "save");
+        });
+
+        $(form).find("[data-trigger-form-lock]").each(function(){
+            var parent = $(this).parent("li");
+            $(parent).hide();
+            $(parent).attr("form-tab", "lock");
+        });
+    }
     $(document).ready(function(){
-        checkFormEditability("form");
+        formSetUp(".form-toolbar");
+
         $("[data-trigger-form-lock]").on("click", function(){
             var targetForm = $(this).data("trigger-form-lock");
-            $(this).parent("li").first().addClass("active");
+            $(this).parent("li").first().hide();
             $(this).parent("li").first().siblings().removeClass("active");
+            $(this).parent("li").first().siblings("[form-tab=save]").hide();
             $(targetForm).removeClass("form-enabled");
             $(targetForm).addClass("form-disabled");
             checkFormEditability(targetForm);
@@ -235,6 +260,8 @@
             var targetForm = $(this).data("trigger-form-unlock");
             $(this).parent("li").first().addClass("active");
             $(this).parent("li").first().siblings().removeClass("active");
+            $(this).parent("li").first().siblings("[form-tab=save]").show();
+            $(this).parent("li").first().siblings("[form-tab=lock]").show();
             $(targetForm).removeClass("form-disabled");
             $(targetForm).addClass("form-enabled");
             checkFormEditability(targetForm);

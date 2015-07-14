@@ -8,10 +8,10 @@
         </li>
     </ul>
     <div class="block">
-        <div class="header">
+        <div class="header no-border">
             <h2>Reminders</h2>
         </div>
-        <div class="content">
+        <div class="content no-padding">
             <table class="dataTable table table-bordered table-hover">
                 <thead>
                 <tr>

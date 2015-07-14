@@ -1,3 +1,2 @@
-<div class="row">
-    <?php require 'dashboard/_DashboardContent.php'; ?>
-</div>
+
+    <?php require 'dashboard/dashboardDetails.php'; ?>

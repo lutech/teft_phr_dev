@@ -12877,6 +12877,9 @@ body {
 .panel-group .panel {
   overflow: visible;
 }
+.panel-group .panel .controls {
+  padding-bottom: 15px;
+}
 .form-signin {
   max-width: 330px;
   padding: 15px;
@@ -13070,7 +13073,7 @@ body {
 }
 /* Google Map */
 #map-canvas {
-  height: 300px ;
+  height: 300px;
 }
 /* Bootstrap Multiselect */
 .multiselect {
@@ -13237,6 +13240,18 @@ h1.row span {
 .form-toolbar .nav-tabs li .toolbar-button-label {
   display: block;
 }
+.form-toolbar .nav-tabs li.active a,
+.form-toolbar .nav-tabs li.active a:hover,
+.form-toolbar .nav-tabs li.active a:focus {
+  color: white;
+  background-color: #e27000;
+  cursor: default;
+}
+.form-toolbar .nav-tabs li.active a:after,
+.form-toolbar .nav-tabs li.active a:hover:after,
+.form-toolbar .nav-tabs li.active a:focus:after {
+  background-color: transparent;
+}
 .form-toolbar.container {
   margin-left: -30px;
 }
@@ -13285,6 +13300,9 @@ table tbody td {
 .app-block.app-emergency-block .header .h5,
 .app-block.app-emergency-block .header .h6 {
   font-weight: bold !important;
+}
+.app-primary-check {
+  color: #e27000;
 }
 /* Bootstrap Overrides
 ================================================================================================================================================*/
@@ -13384,12 +13402,17 @@ table.table-minimalist th.actions span {
   overflow: hidden;
   display: inline-block;
 }
+table caption {
+  text-transform: uppercase;
+}
+table thead tr th {
+  font-size: 15px;
+  font-weight: 600;
+}
 table.app-table caption {
   text-transform: uppercase;
 }
 table.app-table thead tr th {
-  font-size: 15px;
-  font-weight: 600;
   background: #817793;
   color: white;
 }
@@ -13411,6 +13434,42 @@ table.app-table thead tr th {
   margin-left: 0;
   font-size: inherit;
 }
+.genericform-style h2 {
+  margin-bottom: 30px;
+  font-weight: bold !important;
+  border-bottom: 2px solid #DDD;
+}
+.genericform-style .fieldset-container-one {
+  padding: 0 10px;
+}
+.genericform-style .fieldset-container-one > legend {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-weight: normal !important;
+  border-bottom: 2px solid #5d4c7c;
+  margin-bottom: 20px;
+}
+.genericform-style .fieldset-container-one > legend small,
+.genericform-style .fieldset-container-one > legend .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #777777;
+}
+.genericform-style .fieldset-container-one > legend small,
+.genericform-style .fieldset-container-one > legend .small {
+  font-size: 65%;
+}
+.genericform-style .header-info {
+  margin-bottom: 20px;
+  display: inline-block;
+}
 .genericform-style label,
 .genericform-style .label {
   width: 35%;
@@ -13421,13 +13480,56 @@ table.app-table thead tr th {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 600;
-  height: 21px;
+  min-height: 21px;
   line-height: 21px;
   margin-bottom: 7px;
   text-align: left;
   white-space: normal;
   vertical-align: middle;
+  padding: 0;
 }
-.genericform-style input[type=radio] + label {
+.genericform-style input[type=radio] + label,
+.genericform-style input[type=checkbox] + label {
   width: auto;
+}
+.genericform-style textarea {
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  height: 100px;
+  resize: vertical;
+}
+input[readonly=readonly] {
+  background-color: #ebebe4;
+  border: 1px solid #a9a9a9;
+  cursor: not-allowed;
+}
+.gritter-close:after {
+  content: "x";
+}
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  background-color: #d7d7d7;
+  margin: 0 auto;
+}
+.profile-picture span.fa {
+  position: absolute;
+  bottom: 25px;
+  margin-left: -115px;
+  font-size: 100px;
+  color: #aaa;
+}
+.app-read-label {
+  text-transform: uppercase;
+  display: block;
+  font-weight: normal;
+  color: #aaa;
+  font-size: 90%;
+}
+.app-read-data {
+  font-size: 130%;
+}
+.epie-chart > span {
+  font-size: 250%;
 }

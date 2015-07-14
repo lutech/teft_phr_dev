@@ -1,41 +1,59 @@
-
-<div class="content red-chart">
-    <div id="site_statistics2" style="height:152px;"></div>
+<div class="content no-padding">
+    <div class="stat-data">
+        <div class="red-chart">
+            <div id="heartRateChart" style="height:152px;"></div>
+        </div>
+    </div>
+    <div class="stat-data">
+        <div class="stat-number">
+            <div>
+                <h2>72</h2>
+            </div>
+            <div>BPM <br/><span>(Most Recent)</span></div>
+        </div>
+        <div class="stat-number">
+            <div>
+                <h2>70</h2>
+            </div>
+            <div>BPM <br/><span>(Average - Last 5)</span></div>
+        </div>
+    </div>
+    <div class="clear"></div>
 </div>
 <div class="content no-padding">
     <table class="red">
         <thead>
         <tr>
-            <th>Name</th>
-            <th class="right"><span>25%</span>C.P.U</th>
-            <th class="right"><span>29%</span>Memory</th>
-            <th class="right"><span>16%</span>Disc</th>
+            <th>Last 5</th>
+            <th>Source</th>
+            <th>Result</th>
         </tr>
         </thead>
         <tbody class="no-border-x">
         <tr>
-            <td style="width:40%;"><i class="fa fa-sitemap"></i> Server load</td>
-            <td class="text-right">0,2%</td>
-            <td class="text-right">13,2 MB</td>
-            <td class="text-right">0,1 MB/s</td>
+            <td>06/10/2015</td>
+            <td>Dr. Paulsen</td>
+            <td>72<small class="text-muted">&nbsp;BPM</small></td>
         </tr>
         <tr>
-            <td><i class="fa fa-tasks"></i> Apps</td>
-            <td class="text-right">0,2%</td>
-            <td class="text-right">13,2 MB</td>
-            <td class="text-right">0,1 MB/s</td>
+            <td>05/28/2015</td>
+            <td>Cardiology Offices of Adamstown</td>
+            <td>68<small class="text-muted">&nbsp;BPM</small></td>
         </tr>
         <tr>
-            <td><i class="fa fa-signal"></i> Process</td>
-            <td class="text-right">0,2%</td>
-            <td class="text-right">13,2 MB</td>
-            <td class="text-right">0,1 MB/s</td>
+            <td>05/21/2015</td>
+            <td>Manually Entered</td>
+            <td>69<small class="text-muted">&nbsp;BPM</small></td>
         </tr>
         <tr>
-            <td><i class="fa fa-bolt"></i> Wamp Server</td>
-            <td class="text-right">0,2%</td>
-            <td class="text-right">13,2 MB</td>
-            <td class="text-right">0,1 MB/s</td>
+            <td>05/01/2015</td>
+            <td>Cardiology Offices of Adamstown</td>
+            <td>71<small class="text-muted">&nbsp;BPM</small></td>
+        </tr>
+        <tr>
+            <td>04/24/2015</td>
+            <td>Cardiology Offices of Adamstown</td>
+            <td>72<small class="text-muted">&nbsp;BPM</small></td>
         </tr>
         </tbody>
     </table>
