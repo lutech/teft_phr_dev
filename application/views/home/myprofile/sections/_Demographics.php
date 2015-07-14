@@ -53,7 +53,7 @@
         </div>
     </div>
     <div class="col-md-2 text-right">
-        <button class="btn btn-small btn-primary md-trigger" role="button" data-modal="editDemographics">
+        <button type="button" class="btn btn-small btn-primary md-trigger" role="button" data-modal="editDemographics">
             <span class="fa fa-pencil"></span>&nbsp;&nbsp;Edit
         </button>
     </div>

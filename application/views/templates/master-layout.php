@@ -73,8 +73,8 @@
 		<div id="main-body" class="container cl-mcont">
 			<!-- Main Content -->
 		<?php require "application/views/{$area}/{$page}.php";?>
+            <div class="md-overlay"></div>
 		</div>
-
 
         <!-- Main Footer -->
         <!--< ?php require 'footer.php'; ?> -->
