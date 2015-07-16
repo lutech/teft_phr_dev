@@ -14,8 +14,10 @@
                 </a>
             </li>
         </ul>
-        <div class="block-flat header">
-            <h1>Vitals</h1>
+        <div class="block app-block app-heading-block">
+            <div class="header">
+                <h1>Vitals</h1>
+            </div>
         </div>
     </div>
     <div class="content">

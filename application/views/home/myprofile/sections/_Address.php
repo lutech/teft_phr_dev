@@ -26,12 +26,11 @@
         </div>
     </div>
     <div class="col-md-2 text-right">
-        <button class="btn btn-small btn-primary" role="button" data-toggle="modal" data-target="#modalEditUserInfo">
+        <a herf="#" role="button" data-toggle="modal" data-target="#editAddress">
             <span class="fa fa-pencil"></span>&nbsp;&nbsp;Edit
-        </button>
+        </a>
     </div>
 </div>
-<hr/>
 <div class="row">
     <div class="col-md-2">
     </div>
@@ -58,8 +57,8 @@
         </div>
     </div>
     <div class="col-md-2 text-right">
-        <button class="btn btn-small btn-primary" role="button" data-toggle="modal" data-target="#modalEditUserInfo">
+        <a herf="#" role="button" data-toggle="modal" data-target="#editAddress">
             <span class="fa fa-pencil"></span>&nbsp;&nbsp;Edit
-        </button>
+        </a>
     </div>
 </div>

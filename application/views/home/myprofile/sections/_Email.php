@@ -21,8 +21,8 @@
         </div>
     </div>
     <div class="col-md-2 text-right">
-        <button class="btn btn-small btn-primary" role="button" data-toggle="modal" data-target="#modalEditUserInfo">
+        <a herf="#" role="button" data-toggle="modal" data-target="#editEmail">
             <span class="fa fa-pencil"></span>&nbsp;&nbsp;Edit
-        </button>
+        </a>
     </div>
 </div>

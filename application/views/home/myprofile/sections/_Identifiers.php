@@ -22,8 +22,8 @@
         </div>
     </div>
     <div class="col-md-2 text-right">
-        <button class="btn btn-small btn-primary" role="button" data-toggle="modal" data-target="#modalEditJursidiction">
+        <a herf="#" role="button" data-toggle="modal" data-target="#editIdentifiers">
             <span class="fa fa-pencil"></span>&nbsp;&nbsp;Edit
-        </button>
+        </a>
     </div>
 </div>

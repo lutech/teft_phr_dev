@@ -20,8 +20,10 @@
                 </a>
             </li>
         </ul>
-        <div class="block-flat header">
-            <h1>My Health Data</h1>
+        <div class="block app-block app-heading-block">
+            <div class="header">
+                <h1>My Health Data</h1>
+            </div>
         </div>
     </div>
     <div class="content">
@@ -30,3 +32,24 @@
         </div>
     </div>
 </div>
+
+
+<!-- Modals-->
+<?php require_once 'shared/_EditMedication.php'; ?>
+<?php require_once 'shared/_EditCondition.php'; ?>
+<?php require_once 'shared/_EditAllergy.php'; ?>
+<?php require_once 'shared/_EditDevice.php'; ?>
+
+<?php require_once 'shared/_NewMedication.php'; ?>
+<?php require_once 'shared/_NewCondition.php'; ?>
+<?php require_once 'shared/_NewAllergy.php'; ?>
+<?php require_once 'shared/_NewDevice.php'; ?>
+
+<?php require_once 'shared/_MedicationInfo.php'; ?>
+<?php require_once 'shared/_ConditionInfo.php'; ?>
+<?php require_once 'shared/_AllergyInfo.php'; ?>
+
+<?php require_once 'shared/_ViewMedicalContact.php'; ?>
+<?php require_once 'shared/_CreateContact.php'; ?>
+<?php require_once 'shared/_SendMessage.php'; ?>
+<?php require_once 'shared/_SetReminder.php'; ?>

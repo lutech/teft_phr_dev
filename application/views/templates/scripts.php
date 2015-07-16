@@ -41,7 +41,14 @@
                 class_name: 'success'
             });
         });
-
+        $('[data-trigger-modal-save]').on("click", function(){
+            $.extend($.gritter.options, { position: 'bottom-right' });
+            $.gritter.add({
+                title: 'Success',
+                text: 'Your changes have been saved.',
+                class_name: 'success'
+            });
+        });
 //        function fixPosMainNav(){
 //            $('#main-nav').addClass("main-nav-fixed");
 //        };

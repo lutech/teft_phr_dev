@@ -51,10 +51,24 @@
                 </address>
             </div>
         </div>
+        <div class="col-md-12">
+            <div class="col-md-6">
+                <address>
+                    <span class="app-read-label">Medicaid #</span>
+                    <span class="app-read-data">16843854176</span>
+                </address>
+            </div>
+            <div class="col-md-6">
+                <address>
+                    <span class="app-read-label">Medicare #</span>
+                    <span class="app-read-data">68434684684</span>
+                </address>
+            </div>
+        </div>
     </div>
     <div class="col-md-2 text-right">
-        <button type="button" class="btn btn-small btn-primary md-trigger" role="button" data-modal="editDemographics">
-            <span class="fa fa-pencil"></span>&nbsp;&nbsp;Edit
-        </button>
+        <a herf="#" role="button" data-backdrop="static" data-keyboard="false" data-toggle="modal" data-target="#editAccountInfo">
+            <span class="fa fa-pencil"></span>&nbsp;Edit
+        </a>
     </div>
 </div>

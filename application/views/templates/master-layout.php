@@ -14,7 +14,7 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/css/jquery-ui.min.css">
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/js/lib/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/css/bootstrap-multiselect.css">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/css/jquery.dataTables.min.css">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/content/css/jquery.dataTables_themeroller.css">
@@ -39,7 +39,7 @@
 		<!-- Javascript -->
 		<script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/jquery-ui-1.10.2.custom.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/bootstrap-multiselect.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/localstoragedb.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/jquery.dataTables.min.js"></script>
@@ -73,7 +73,7 @@
 		<div id="main-body" class="container cl-mcont">
 			<!-- Main Content -->
 		<?php require "application/views/{$area}/{$page}.php";?>
-            <div class="md-overlay"></div>
+<!--            <div class="md-overlay"></div>-->
 		</div>
 
         <!-- Main Footer -->
@@ -85,11 +85,11 @@
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/home-dashboard.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/page-calendar.js"></script>
 		<?php
-        require 'scripts.php';
+            require 'scripts.php';
 
-        if (!empty($Script)) {
-            echo $Script;
-        }
+            if (!empty($Script)) {
+                echo $Script;
+            }
         ?>
 	</body>
 </html>

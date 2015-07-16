@@ -150,6 +150,7 @@ body {
       background-color: #73648E;
       border: 2px solid #48b2f2;
       border: none;
+
     }
     a.selected,
     a.selected:hover {
@@ -687,6 +688,13 @@ table tbody td {
   border-bottom: 1px solid #ddd;
 }
 
+.accordion.accordion-semi .panel-heading a,
+.accordion.accordion-semi .panel-heading a.collapsed{
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #73648E;
+}
+
 /* For use with Bootstraps default Accordions.*/
 
 .panel-arrow {
@@ -809,6 +817,17 @@ table.app-table {
   font-size: inherit;
 }
 
+.no-border {
+  border: 0px !important;
+}
+.no-box-shadow {
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+button.close {
+  font-family: arial, Verdana, Arial;
+}
 //ltss overrides
 .genericform-style {
 
@@ -870,6 +889,15 @@ input[readonly=readonly] {
   cursor: not-allowed;
 }
 
+input:not([type^="button"]) ,
+input:not([class*=" button"]),
+input:not([type^="submit"]) ,
+input:not([class*=" submit"]),
+textarea, select{
+  font-size: 100% !important;
+  font-weight: bold;
+}
+
 .gritter-close:after {
   content: "x"
 }
@@ -899,8 +927,77 @@ input[readonly=readonly] {
 .app-read-data {
   font-size: 130%;
 }
+.app-read-data.primary-data {
+  font-weight: bold;
+}
 
+small {
+
+  .app-read-label {
+    line-height: normal;
+    margin-top: 5px;
+    display: block;
+  }
+  .app-read-data {
+    line-height: normal;
+    margin-bottom: 5px;
+    display: block;
+  }
+}
+.app-block-list {
+  max-height: 400px;
+  overflow-x: auto;
+  > .row {
+    margin: 0 !important;
+    padding: 10px 0 !important;
+  }
+  > .row:nth-child(even) {
+    background: #FAF9FE;
+  }
+}
+
+.app-flat-well {
+  background: rgba(0, 0, 0, 0.005);
+  padding: 5px 10px;
+  .app-read-data {
+    color: #777;
+  }
+}
+a {
+  .fa + .button-label,
+  .icon + .button-label {
+    margin-left: 5px;
+  }
+}
+
+a:hover {
+  .button-label {
+    text-decoration: underline;
+  }
+}
+@media (max-width: 992px) {
+
+  a {
+    .fa, .icon {
+      font-size: 150%;
+      margin: 5px 0;
+    }
+    .button-label {
+      display: none;
+    }
+  }
+}
+
+.dropdown {
+  a[data-toggle="dropdown"] {
+    cursor: pointer;
+  }
+}
 //Dashboard Overrides
 .epie-chart > span {
   font-size: 250%;
+}
+
+.md-overlay {
+  z-index: 1031;
 }

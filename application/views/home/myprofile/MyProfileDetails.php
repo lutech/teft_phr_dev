@@ -39,7 +39,7 @@
                     </a>
                 </li>
             </ul>
-            <div class="block app-block">
+            <div class="block app-block app-heading-block">
                 <div class="header">
                     <h1>My Profile</h1>
                 </div>
@@ -54,4 +54,13 @@
 </div>
 
 <!--//Edit Modals-->
-<?php require_once 'shared/_EditDemographics.php'; ?>
+<?php require_once 'shared/_EditAccountInfo.php'; ?>
+<?php require_once 'shared/_EditAdditionalInfo.php'; ?>
+<?php require_once 'shared/_EditIdentifiers.php'; ?>
+<?php require_once 'shared/_EditPhone.php'; ?>
+<?php require_once 'shared/_NewPhone.php'; ?>
+<?php require_once 'shared/_EditEmail.php'; ?>
+<?php require_once 'shared/_NewEmail.php'; ?>
+<?php require_once 'shared/_EditAddress.php'; ?>
+<?php require_once 'shared/_NewAddress.php'; ?>
+<?php require_once 'shared/_EditLoginInfo.php'; ?>

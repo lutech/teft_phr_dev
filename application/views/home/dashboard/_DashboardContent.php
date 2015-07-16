@@ -7,7 +7,7 @@
 <div class="row dash-cols">
     <div class="col-sm-6 col-md-6">
         <?php require "sections/_LtssApplicationStatus.php" ?>
-        <?php require "sections/_LtssGoals.php" ?>
+<!--        --><?php //require "sections/_LtssGoals.php" ?>
     </div>
     <div class="col-sm-6 col-md-6">
         <div class="block">

@@ -6,6 +6,9 @@
         <option name="HTML_ATTRIBUTE_WRAP" value="0" />
         <option name="HTML_TEXT_WRAP" value="0" />
         <option name="HTML_ELEMENTS_TO_INSERT_NEW_LINE_BEFORE" value="body,p,form,h1,h2,h3,div,ul,li,a" />
+        <XML>
+          <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
+        </XML>
       </value>
     </option>
     <option name="USE_PER_PROJECT_SETTINGS" value="true" />
