@@ -4,11 +4,11 @@
 
         <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
             <li>
-                <a href="#editWeight"><span class="fa fa-pencil"></span>&nbsp;&nbsp;Edit</a>
+                <a href="#editWeight" role="button" data-toggle="modal"><span class="fa fa-pencil"></span>&nbsp;&nbsp;Edit</a>
             </li>
             <hr class="no-margin"/>
             <li>
-                <a href="#removeWeight"><span class="fa fa-trash"></span>&nbsp;&nbsp;Remove</a>
+                <a href="#removeWeight" role="button" data-toggle="modal"><span class="fa fa-trash"></span>&nbsp;&nbsp;Remove</a>
             </li>
         </ul>
     </div>

@@ -4,11 +4,11 @@
 
         <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
             <li>
-                <a href="#editRespiratoryRate"><span class="fa fa-pencil"></span>&nbsp;&nbsp;Edit</a>
+                <a href="#editRespiratoryRate" role="button" data-toggle="modal"><span class="fa fa-pencil"></span>&nbsp;&nbsp;Edit</a>
             </li>
             <hr class="no-margin"/>
             <li>
-                <a href="#removeRespiratoryRate"><span class="fa fa-trash"></span>&nbsp;&nbsp;Remove</a>
+                <a href="#removeRespiratoryRate" role="button" data-toggle="modal"><span class="fa fa-trash"></span>&nbsp;&nbsp;Remove</a>
             </li>
         </ul>
     </div>

@@ -4,11 +4,11 @@
 
         <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
             <li>
-                <a href="#editGlucoseLevel"><span class="fa fa-pencil"></span>&nbsp;&nbsp;Edit</a>
+                <a href="#editBloodGlucose" role="button" data-toggle="modal"><span class="fa fa-pencil"></span>&nbsp;&nbsp;Edit</a>
             </li>
             <hr class="no-margin"/>
             <li>
-                <a href="#removeGlucoseLevel"><span class="fa fa-trash"></span>&nbsp;&nbsp;Remove</a>
+                <a href="#removeBloodGlucose" role="button" data-toggle="modal"><span class="fa fa-trash"></span>&nbsp;&nbsp;Remove</a>
             </li>
         </ul>
     </div>
@@ -194,7 +194,7 @@
                 </table>
 
                 <div class="app-block-controls text-center">
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#newGlucoseLevel">
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#newBloodGlucose">
                         <span class="glyphicon glyphicon-plus"></span> Add Glucose Level
                     </button>
                 </div>

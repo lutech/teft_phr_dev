@@ -311,7 +311,7 @@
                     <span class="fa fa-pencil"></span><span class="button-label">Edit</span>
                 </a>
                 <br/>
-                <a href="#allergyInfo" role="button" data-toggle="modal">
+                <a href="#allergyInfo"s>
                     <span class="fa fa-info-circle"></span><span class="button-label">More Info</span>
                 </a>
             </div>

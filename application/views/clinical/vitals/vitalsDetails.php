@@ -26,6 +26,14 @@
 </div>
 
 
+<!-- Modals-->
+<?php require_once 'shared/modals/bloodglucose/_Modal.php'; ?>
+<?php require_once 'shared/modals/bloodpressure/_Modal.php'; ?>
+<?php require_once 'shared/modals/heartrate/_Modal.php'; ?>
+<?php require_once 'shared/modals/respiratoryrate/_Modal.php'; ?>
+<?php require_once 'shared/modals/weight/_Modal.php'; ?>
+
+
 <?php $Script = '
     <script type="text/javascript">
 
