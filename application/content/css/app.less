@@ -636,9 +636,11 @@ table tbody td {
   }
 
 }
+
 .app-primary-check {
   color: @app-toolbar-active-bgcolor;
 }
+
 /* Bootstrap Overrides
 ================================================================================================================================================*/
 
@@ -689,7 +691,7 @@ table tbody td {
 }
 
 .accordion.accordion-semi .panel-heading a,
-.accordion.accordion-semi .panel-heading a.collapsed{
+.accordion.accordion-semi .panel-heading a.collapsed {
   font-weight: bold;
   text-transform: uppercase;
   color: #73648E;
@@ -794,6 +796,32 @@ table.app-table {
   }
 }
 
+//table.app-full-height-table {
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+//  display: block;
+//  thead {
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    right: 0;
+//    display: inline-table;
+//    width: 100%;
+//  }
+//  tbody {
+//    position: absolute;
+//    top: 20px;
+//    bottom: 0;
+//    left: 0;
+//    right: 0;
+//    display: inline-table;
+//    width: 100%;
+//  }
+//}
+
 .valign-middle {
   vertical-align: middle !important;
 }
@@ -807,8 +835,27 @@ table.app-table {
   top: 25%;
   color: inherit
 }
-
-
+.icon-lungs {
+  margin-right: 3%;
+  position: relative;
+}
+.icon-lungs:before {
+  content: "\e839";
+  position: absolute;
+  font-size: 250% !important;
+  left: -20px;
+  top: -70%;
+}
+.fa-long-arrow-right.average {
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+}
+.fa-arrow-down.base {
+  border-bottom: 1px solid;
+}
+.fa-arrow-up.peak {
+  border-top: 1px solid;
+}
 
 // Fontsaddict-Medical Overrides
 [class^="icon-"]:not([class^="icon-i"]):before, [class*=" icon-"]:not([class*=" icon-i"]):before,
@@ -820,6 +867,7 @@ table.app-table {
 .no-border {
   border: 0px !important;
 }
+
 .no-box-shadow {
   -moz-box-shadow: none !important;
   box-shadow: none !important;
@@ -828,6 +876,7 @@ table.app-table {
 button.close {
   font-family: arial, Verdana, Arial;
 }
+
 //ltss overrides
 .genericform-style {
 
@@ -889,11 +938,11 @@ input[readonly=readonly] {
   cursor: not-allowed;
 }
 
-input:not([type^="button"]) ,
+input:not([type^="button"]),
 input:not([class*=" button"]),
-input:not([type^="submit"]) ,
+input:not([type^="submit"]),
 input:not([class*=" submit"]),
-textarea, select{
+textarea, select {
   font-size: 100% !important;
   font-weight: bold;
 }
@@ -917,6 +966,11 @@ textarea, select{
   }
 }
 
+.no-side-margin {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 .app-read-label {
   text-transform: uppercase;
   display: block;
@@ -924,9 +978,11 @@ textarea, select{
   color: #aaa;
   font-size: 90%;
 }
+
 .app-read-data {
   font-size: 130%;
 }
+
 .app-read-data.primary-data {
   font-weight: bold;
 }
@@ -944,6 +1000,7 @@ small {
     display: block;
   }
 }
+
 .app-block-list {
   max-height: 400px;
   overflow-x: auto;
@@ -956,13 +1013,38 @@ small {
   }
 }
 
+.app-block-controls {
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}
+
 .app-flat-well {
   background: rgba(0, 0, 0, 0.005);
   padding: 5px 10px;
   .app-read-data {
-    color: #777;
+    color: #777 !important;
   }
 }
+
+.app-block-table {
+  thead {
+    tr {
+      th {
+        border: none !important;
+        border-top: 1px solid #DADADA !important;
+        border-bottom: 1px solid #EEE !important;
+      }
+    }
+  }
+  tbody {
+    tr {
+      td{
+        border: none !important;
+      }
+    }
+  }
+}
+
 a {
   .fa + .button-label,
   .icon + .button-label {
@@ -975,6 +1057,7 @@ a:hover {
     text-decoration: underline;
   }
 }
+
 @media (max-width: 992px) {
 
   a {
@@ -993,6 +1076,7 @@ a:hover {
     cursor: pointer;
   }
 }
+
 //Dashboard Overrides
 .epie-chart > span {
   font-size: 250%;
@@ -1001,3 +1085,36 @@ a:hover {
 .md-overlay {
   z-index: 1031;
 }
+
+
+
+//DataTable Styling - Full Height
+//
+//.app-full-height-table-container > .dataTables_wrapper {
+//  position: absolute !important;
+//  left: 0;
+//  right: 0;
+//  top: 0;
+//  bottom: 0;
+//}
+//.app-full-height-table-container > .dataTables_wrapper .dataTables_scroll{
+//  width: 100%;
+//  height: 100%;
+//  background-color: #fff;
+//}
+//.app-full-height-table-container > .dataTables_wrapper thead,
+//.app-full-height-table-container > .dataTables_wrapper tbody,
+//.app-full-height-table-container > .dataTables_wrapper .dataTables_scrollFoot,
+//.app-full-height-table-container > .dataTables_wrapper .dataTables_scrollFootInner {
+//  width: 100% !Important;
+//}
+//.app-full-height-table-container > .dataTables_wrapper .dataTables_scrollBody {
+//  overflow-x: hidden !important;
+//  border: none !important;
+//  position: absolute;
+//  top: 36px;
+//  bottom: 0;
+//  left: 0;
+//  right: 0px;
+//  height: auto !important;
+//}

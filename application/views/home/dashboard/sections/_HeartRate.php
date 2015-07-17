@@ -7,15 +7,15 @@
     <div class="stat-data">
         <div class="stat-number">
             <div>
-                <h2>72</h2>
+                <span class="app-read-label">Last Record</span>
+                <h2>72 <small class="text-muted">bpm</small></h2>
             </div>
-            <div>BPM <br/><span>(Most Recent)</span></div>
         </div>
         <div class="stat-number">
             <div>
-                <h2>70</h2>
+                <span class="app-read-label">Avg.</span>
+                <h2>70 <small class="text-muted">bpm</small></h2>
             </div>
-            <div>BPM <br/><span>(Average - Last 5)</span></div>
         </div>
     </div>
     <div class="clear"></div>

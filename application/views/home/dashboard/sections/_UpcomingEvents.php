@@ -9,7 +9,7 @@
         $(document).ready(function(){
             $('#service-activity-calendar').fullCalendar({
                 defaultView: 'basicWeek',
-                height: 200
+                height: 300
             });
         });
     </script>

@@ -13433,6 +13433,27 @@ table.app-table thead tr th {
   top: 25%;
   color: inherit;
 }
+.icon-lungs {
+  margin-right: 3%;
+  position: relative;
+}
+.icon-lungs:before {
+  content: "\e839";
+  position: absolute;
+  font-size: 250% !important;
+  left: -20px;
+  top: -70%;
+}
+.fa-long-arrow-right.average {
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+}
+.fa-arrow-down.base {
+  border-bottom: 1px solid;
+}
+.fa-arrow-up.peak {
+  border-top: 1px solid;
+}
 [class^="icon-"]:not([class^="icon-i"]):before,
 [class*=" icon-"]:not([class*=" icon-i"]):before,
 [class^="icon-"]:not([class^="icon-i"]):after,
@@ -13545,6 +13566,10 @@ select {
   font-size: 100px;
   color: #aaa;
 }
+.no-side-margin {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 .app-read-label {
   text-transform: uppercase;
   display: block;
@@ -13579,12 +13604,24 @@ small .app-read-data {
 .app-block-list > .row:nth-child(even) {
   background: #FAF9FE;
 }
+.app-block-controls {
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}
 .app-flat-well {
   background: rgba(0, 0, 0, 0.005);
   padding: 5px 10px;
 }
 .app-flat-well .app-read-data {
-  color: #777;
+  color: #777 !important;
+}
+.app-block-table thead tr th {
+  border: none !important;
+  border-top: 1px solid #DADADA !important;
+  border-bottom: 1px solid #EEE !important;
+}
+.app-block-table tbody tr td {
+  border: none !important;
 }
 a .fa + .button-label,
 a .icon + .button-label {

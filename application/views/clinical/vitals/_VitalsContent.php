@@ -5,6 +5,11 @@
 </div>
 <div class="row">
     <div class="col-lg-12">
+        <?php require "sections/_BloodGlucose.php" ?>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
         <?php require "sections/_BloodPressure.php" ?>
     </div>
 </div>
@@ -15,6 +20,6 @@
 </div>
 <div class="row">
     <div class="col-lg-12">
-        <?php require "sections/_BodyTemperature.php" ?>
+        <?php require "sections/_Weight.php" ?>
     </div>
 </div>

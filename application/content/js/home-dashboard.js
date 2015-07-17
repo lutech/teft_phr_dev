@@ -69,22 +69,22 @@ var App = (function () {
 
 
 
-      // Heart Rates Data
+      // Blood Glucose Levels
       //
-      var heartRates = [
-          [1, 72],
-          [2, 71],
-          [3, 69],
-          [4, 68],
-          [5, 72]
+      var bloodGlucoseLevels = [
+          [1, 112],
+          [2, 150],
+          [3, 110],
+          [4, 125],
+          [5, 198]
       ];
 
-      if ($('#heartRateChart').size() != 0) {
-        $('#heartRateChart_loading').hide();
-        $('#heartRateChart_content').show();
-        var plot_statistics = $.plot($("#heartRateChart"), [{
-          data: heartRates,
-          label: "Heart Rates"
+      if ($('#bloodGlucose').size() != 0) {
+        $('#bloodGlucose_loading').hide();
+        $('#bloodGlucose_content').show();
+        var plot_statistics = $.plot($("#bloodGlucose"), [{
+          data: bloodGlucoseLevels,
+          label: "Blood Glucose"
         }
         ], {
           series: {
@@ -147,6 +147,86 @@ var App = (function () {
             previousPoint = null;
           }
         }); 
+      }
+
+      // Heart Rates Data
+      //
+      var heartRates = [
+          [1, 72],
+          [2, 71],
+          [3, 69],
+          [4, 68],
+          [5, 72]
+      ];
+
+      if ($('#heartRateChart').size() != 0) {
+        $('#heartRateChart_loading').hide();
+        $('#heartRateChart_content').show();
+        var plot_statistics = $.plot($("#heartRateChart"), [{
+          data: heartRates,
+          label: "Heart Rate"
+        }
+        ], {
+          series: {
+            lines: {
+              show: true,
+              lineWidth: 2,
+              fill: true,
+              fillColor: {
+                colors: [{
+                  opacity: 0.2
+                }, {
+                  opacity: 0.01
+                }
+                ]
+              }
+            },
+            points: {
+              show: true
+            },
+            shadowSize: 2
+          },
+          legend:{
+            show: false
+          },
+          grid: {
+          labelMargin: 10,
+             axisMargin: 500,
+            hoverable: true,
+            clickable: true,
+            tickColor: "rgba(255,255,255,0.22)",
+            borderWidth: 0
+          },
+            colors: ["#F74417", "#FFFFFF", "#52e136"],
+          xaxis: {
+            ticks: 11,
+            tickDecimals: 0
+          },
+          yaxis: {
+            ticks: 5,
+            tickDecimals: 0
+          }
+        });
+
+        var previousPoint = null;
+        $("#heartRateChart").bind("plothover", function (event, pos, item) {
+
+          var str = "(" + pos.x.toFixed(2) + ", " + pos.y.toFixed(2) + ")";
+
+          if (item) {
+            if (previousPoint != item.dataIndex) {
+              previousPoint = item.dataIndex;
+              $("#tooltip").remove();
+              var x = item.datapoint[0].toFixed(2),
+              y = item.datapoint[1].toFixed(2);
+              showTooltip(item.pageX, item.pageY,
+              item.series.label + " of " + x + " = " + y);
+            }
+          } else {
+            $("#tooltip").remove();
+            previousPoint = null;
+          }
+        });
       }
 
 
@@ -233,6 +313,89 @@ var App = (function () {
               previousPoint = null;
           }
       });
+
+
+      // Respiratory Rate
+      //
+      var respiratoryRates = [
+          [1, 14],
+          [2, 13],
+          [3, 15],
+          [4, 15],
+          [5, 14]
+      ];
+
+      if ($('#respiratoryRate').size() != 0) {
+          $('#respiratoryRate_loading').hide();
+          $('#respiratoryRate_content').show();
+          var plot_statistics = $.plot($("#respiratoryRate"), [{
+              data: respiratoryRates,
+              label: "Respiratory Rate"
+          }
+          ], {
+              series: {
+                  lines: {
+                      show: true,
+                      lineWidth: 2,
+                      fill: true,
+                      fillColor: {
+                          colors: [{
+                              opacity: 0.2
+                          }, {
+                              opacity: 0.01
+                          }
+                          ]
+                      }
+                  },
+                  points: {
+                      show: true
+                  },
+                  shadowSize: 2
+              },
+              legend:{
+                  show: false
+              },
+              grid: {
+                  labelMargin: 10,
+                  axisMargin: 500,
+                  hoverable: true,
+                  clickable: true,
+                  tickColor: "rgba(255,255,255,0.22)",
+                  borderWidth: 0
+              },
+              colors: ["#005299", "#FFFFFF", "#52e136"],
+              xaxis: {
+                  ticks: 11,
+                  tickDecimals: 0
+              },
+              yaxis: {
+                  ticks: 5,
+                  tickDecimals: 0
+              }
+          });
+
+          var previousPoint = null;
+          $("#heartRateChart").bind("plothover", function (event, pos, item) {
+
+              var str = "(" + pos.x.toFixed(2) + ", " + pos.y.toFixed(2) + ")";
+
+              if (item) {
+                  if (previousPoint != item.dataIndex) {
+                      previousPoint = item.dataIndex;
+                      $("#tooltip").remove();
+                      var x = item.datapoint[0].toFixed(2),
+                          y = item.datapoint[1].toFixed(2);
+                      showTooltip(item.pageX, item.pageY,
+                          item.series.label + " of " + x + " = " + y);
+                  }
+              } else {
+                  $("#tooltip").remove();
+                  previousPoint = null;
+              }
+          });
+      }
+
+
 
       // Weight Data
       //
@@ -410,54 +573,54 @@ var App = (function () {
           [9, 5]
       ];
 
-      var plot_statistics = $.plot($("#ltssGoals"), [{
-          data: goalsCompleted, showLabels: true, labels: goalsCompleted, labelPlacement: "below", canvasRender: true, cColor: "#FFFFFF"
-      }
-      ], {
-          series: {
-              lines: {
-                  show: true,
-                  lineWidth: 2,
-                  fill: true,
-                  fillColor: {
-                      colors: [{
-                          opacity: 0.25
-                      }, {
-                          opacity: 0.25
-                      }
-                      ]
-                  }
-              },
-              points: {
-                  show: true
-              },
-              shadowSize: 2
-          },
-          legend:{
-              show: false
-          },
-          grid: {
-              show:false,
-              margin: 5,
-              labelMargin: 10,
-              axisMargin: 10,
-              hoverable: true,
-              clickable: true,
-              tickColor: "rgba(255,255,255,0.22)",
-              borderWidth: 0
-          },
-          colors: ["#50ACFE"],
-          xaxis: {
-              autoscaleMargin: 0.04,
-              ticks: 11,
-              tickDecimals: 0
-          },
-          yaxis: {
-              autoscaleMargin: 0.2,
-              ticks: 5,
-              tickDecimals: 0
-          }
-      });
+//      var plot_statistics = $.plot($("#ltssGoals"), [{
+//          data: goalsCompleted, showLabels: true, labels: goalsCompleted, labelPlacement: "below", canvasRender: true, cColor: "#FFFFFF"
+//      }
+//      ], {
+//          series: {
+//              lines: {
+//                  show: true,
+//                  lineWidth: 2,
+//                  fill: true,
+//                  fillColor: {
+//                      colors: [{
+//                          opacity: 0.25
+//                      }, {
+//                          opacity: 0.25
+//                      }
+//                      ]
+//                  }
+//              },
+//              points: {
+//                  show: true
+//              },
+//              shadowSize: 2
+//          },
+//          legend:{
+//              show: false
+//          },
+//          grid: {
+//              show:false,
+//              margin: 5,
+//              labelMargin: 10,
+//              axisMargin: 10,
+//              hoverable: true,
+//              clickable: true,
+//              tickColor: "rgba(255,255,255,0.22)",
+//              borderWidth: 0
+//          },
+//          colors: ["#50ACFE"],
+//          xaxis: {
+//              autoscaleMargin: 0.04,
+//              ticks: 11,
+//              tickDecimals: 0
+//          },
+//          yaxis: {
+//              autoscaleMargin: 0.2,
+//              ticks: 5,
+//              tickDecimals: 0
+//          }
+//      });
 
       //LTSS Application Status
       //

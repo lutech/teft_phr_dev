@@ -24,3 +24,15 @@
         <?php require "_VitalsContent.php" ?>
     </div>
 </div>
+
+
+<?php $Script = '
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            App.init();
+            App.dashboard();
+        });
+
+    </script>
+'?>
