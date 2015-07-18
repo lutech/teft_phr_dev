@@ -846,6 +846,10 @@ table.app-table {
   left: -20px;
   top: -70%;
 }
+
+.glyphicon.glyphicon-adjust {
+  transform: rotate(90deg);
+}
 .fa-long-arrow-right.average {
   border-bottom: 1px solid;
   border-left: 1px solid;
@@ -932,12 +936,15 @@ button.close {
   }
 }
 
-input[readonly=readonly] {
+input[readonly=readonly],
+textarea[readonly=readonly],
+.fieldset-container-one input[type=radio][disabled]:not([checked]) + label:before,
+.fieldset-container-one input[type=checkbox][disabled]:not([checked]) + label:before {
   background-color: rgb(235, 235, 228);
   border: 1px solid rgb(169, 169, 169);
   cursor: not-allowed;
+  //opacity: .1;
 }
-
 input:not([type^="button"]),
 input:not([class*=" button"]),
 input:not([type^="submit"]),
@@ -969,6 +976,19 @@ textarea, select {
 .no-side-margin {
   margin-left: 0 !important;
   margin-right: 0 !important;
+}
+
+.no-max-height {
+  max-height: none !important;
+  overflow: inherit !important;
+}
+.auto-width,
+.frequency-label{
+  max-width: none !important;
+  width: auto !important;
+}
+.extension {
+  width: 80px;
 }
 
 .app-read-label {
@@ -1019,7 +1039,7 @@ small {
 }
 
 .app-flat-well {
-  background: rgba(0, 0, 0, 0.005);
+  background: rgba(0, 0, 0, 0.01);
   padding: 5px 10px;
   .app-read-data {
     color: #777 !important;
@@ -1033,6 +1053,7 @@ small {
         border: none !important;
         border-top: 1px solid #DADADA !important;
         border-bottom: 1px solid #EEE !important;
+        text-transform: uppercase;
       }
     }
   }

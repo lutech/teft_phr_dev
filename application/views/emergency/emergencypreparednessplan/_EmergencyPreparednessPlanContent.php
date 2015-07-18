@@ -1,7 +1,5 @@
-<h4>Emergency Preparedness Plan</h4>
-<h5>Person and Case Manager Information</h5>
-
-<div class="fieldset-container-one">
+<fieldset class="fieldset-container-one">
+    <legend class="legend-header-one">Person and Case Manager Information</legend>
     <div>
         <div class="col-md-6 no-padding">
             <div class="form-group summary">
@@ -56,7 +54,7 @@
         <span class="label">Moving To County:</span>
         <span class="data-element"></span>
     </div>
-</div>
+</fieldset>
 <fieldset class="fieldset-container-one">
     <legend class="legend-header-one">Medical</legend>
     <div class="header-info">

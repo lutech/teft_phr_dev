@@ -1,12 +1,6 @@
 <div class="col-md-12">
     <div class="form-toolbar container">
         <ul class="nav nav-tabs flat-tabs">
-            <li class="active">
-                <a href="#" data-trigger-form-lock="#myprofile" aria-expanded="true">
-                    <span class="fa fa-leanpub fa-2x"></span>
-                    <span class="toolbar-button-label">Read Only</span>
-                </a>
-            </li>
             <li class="">
                 <a href="#" data-trigger-form-unlock="#myprofile" aria-expanded="false";>
                 <span class="fa fa-pencil fa-2x"></span>
@@ -14,9 +8,15 @@
                 </a>
             </li>
             <li class="">
-                <a href="#" aria-expanded="false">
+                <a data-trigger-form-save="#myprofile" href="#" id="save" aria-expanded="false">
                     <span class="fa fa-save fa-2x"></span>
                     <span class="toolbar-button-label">Save</span>
+                </a>
+            </li>
+            <li class="">
+                <a data-trigger-form-lock="#myprofile" href="#" aria-expanded="true">
+                    <span class="fa fa-check-circle fa-2x"></span>
+                    <span class="toolbar-button-label">Done</span>
                 </a>
             </li>
             <li class="">
@@ -31,22 +31,18 @@
                     <span class="toolbar-button-label">Share</span>
                 </a>
             </li>
-            <li class="" style="float: right">
-                <a href="#" aria-expanded="false">
-                    <span class="fa fa-angle-double-down fa-2x"></span>
-                    <span class="toolbar-button-label">Expand All</span>
-                </a>
-            </li>
         </ul>
-        <div class="block app-block">
+        <div class="block app-block app-heading-block">
             <div class="header">
                 <h1>Emergency Preparedness Plan</h1>
             </div>
-            <div class="content">
-                <form id="myprofile" class="panel-group accordion accordion-semi genericform-style pretty-form form-disabled">
-                    <?php require "_EmergencyPreparednessPlanContent.php" ?>
-                </form>
-            </div>
+        </div>
+    </div>
+    <div class="block">
+        <div class="content">
+            <form id="myprofile" class="panel-group accordion accordion-semi genericform-style pretty-form form-disabled">
+                <?php require "_EmergencyPreparednessPlanContent.php" ?>
+            </form>
         </div>
     </div>
 </div>

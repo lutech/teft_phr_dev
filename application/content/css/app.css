@@ -12674,8 +12674,8 @@ form.dropzone .note {
 }
 .pretty-form input[type=radio][disabled] + label:before,
 .pretty-form input[type=checkbox][disabled] + label:before {
-  -ms-opacity: 0.4;
-  opacity: 0.4;
+  -ms-opacity: 0.6;
+  opacity: 0.6;
 }
 /* CSS Document */
 .no-class {
@@ -13223,8 +13223,8 @@ h1.row span {
 }
 .fieldset-container-one input[type=radio][disabled] + label:before,
 .fieldset-container-one input[type=checkbox][disabled] + label:before {
-  -ms-opacity: 0.4;
-  opacity: 0.4;
+  -ms-opacity: 0.6;
+  opacity: 0.6;
 }
 .panel-heading h4,
 .panel-heading .h4 {
@@ -13444,6 +13444,9 @@ table.app-table thead tr th {
   left: -20px;
   top: -70%;
 }
+.glyphicon.glyphicon-adjust {
+  transform: rotate(90deg);
+}
 .fa-long-arrow-right.average {
   border-bottom: 1px solid;
   border-left: 1px solid;
@@ -13536,7 +13539,10 @@ button.close {
   height: 100px;
   resize: vertical;
 }
-input[readonly=readonly] {
+input[readonly=readonly],
+textarea[readonly=readonly],
+.fieldset-container-one input[type=radio][disabled]:not([checked]) + label:before,
+.fieldset-container-one input[type=checkbox][disabled]:not([checked]) + label:before {
   background-color: #ebebe4;
   border: 1px solid #a9a9a9;
   cursor: not-allowed;
@@ -13569,6 +13575,18 @@ select {
 .no-side-margin {
   margin-left: 0 !important;
   margin-right: 0 !important;
+}
+.no-max-height {
+  max-height: none !important;
+  overflow: inherit !important;
+}
+.auto-width,
+.frequency-label {
+  max-width: none !important;
+  width: auto !important;
+}
+.extension {
+  width: 80px;
 }
 .app-read-label {
   text-transform: uppercase;
@@ -13609,7 +13627,7 @@ small .app-read-data {
   padding: 15px 0;
 }
 .app-flat-well {
-  background: rgba(0, 0, 0, 0.005);
+  background: rgba(0, 0, 0, 0.01);
   padding: 5px 10px;
 }
 .app-flat-well .app-read-data {
@@ -13619,6 +13637,7 @@ small .app-read-data {
   border: none !important;
   border-top: 1px solid #DADADA !important;
   border-bottom: 1px solid #EEE !important;
+  text-transform: uppercase;
 }
 .app-block-table tbody tr td {
   border: none !important;
