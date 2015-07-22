@@ -7,52 +7,52 @@
                 </li>
                 <li class="active">
                     <a href="#I-AdministrativeItems" data-toggle="tab">
-                        <span class="toolbar-button-label">I. Administrative Items</span>
+                        <span class="toolbar-button-label">Overview Information</span>
                     </a>
                 </li>
                 <li class="">
                     <a href="#II-AdmissionInformation" data-toggle="tab";>
-                    <span class="toolbar-button-label">II. Admission Information</span>
+                    <span class="toolbar-button-label">Strengths</span>
                     </a>
                 </li>
                 <li class="">
                     <a href="#III-CurrentMedicalInformation" data-toggle="tab">
-                        <span class="toolbar-button-label">III. Current Medical Information</span>
+                        <span class="toolbar-button-label">Goals</span>
                     </a>
                 </li>
                 <li class="">
                     <a href="#IV-CognitiveStatusMoodAndPain" data-toggle="tab">
-                        <span class="toolbar-button-label">IV. Cognitive Status, Mood & Pain</span>
+                        <span class="toolbar-button-label">Risks</span>
                     </a>
                 </li>
                 <li class="">
                     <a href="#V-Impairments" data-toggle="tab">
-                        <span class="toolbar-button-label">V. Impairments</span>
+                        <span class="toolbar-button-label">Self-Direction</span>
                     </a>
                 </li>
                 <li class="">
                     <a href="#VI-FunctionalStatus" data-toggle="tab">
-                        <span class="toolbar-button-label">VI. Functional Status: Usual Performance</span>
+                        <span class="toolbar-button-label">Emergency Backup Plans</span>
                     </a>
                 </li>
                 <li class="">
                     <a href="#VII-OverallPOC" data-toggle="tab">
-                        <span class="toolbar-button-label">VII. Overall POC/ Advance Care Directives</span>
+                        <span class="toolbar-button-label">Services</span>
                     </a>
                 </li>
                 <li class="">
                     <a href="#IX-ICD9CodingInformation" data-toggle="tab">
-                        <span class="toolbar-button-label">IX. ICD-9 Coding Information</span>
+                        <span class="toolbar-button-label">Signatures</span>
                     </a>
                 </li>
                 <li class="">
                     <a href="#X-OtherUsefulInformation" data-toggle="tab">
-                        <span class="toolbar-button-label">X. Other Useful Information</span>
+                        <span class="toolbar-button-label">Review</span>
                     </a>
                 </li>
                 <li class="">
                     <a href="#XI-Feedback" data-toggle="tab">
-                        <span class="toolbar-button-label">XI. Feedback</span>
+                        <span class="toolbar-button-label">Decision</span>
                     </a>
                 </li>
             </ul>

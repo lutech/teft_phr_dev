@@ -1,7 +1,7 @@
 <!doctype html>
 <html id="html">
 	<head>
-		<title><?php echo "Information and Referral - {$page}" ?></title>
+		<title><?php echo "LTSS PHR Portal - {$page}" ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Fonts -->

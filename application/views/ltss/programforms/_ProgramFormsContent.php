@@ -92,8 +92,8 @@
             <div class="header">
                 <h2>Plan of Services & Supports</h2>
             </div>
-            <div class="content">
-                <?php require "sections/_PlanOfServicesAndSupports.php" ?>
+            <div class="content no-padding">
+                <?php require "pss/_pssHistory.php" ?>
             </div>
         </div>
     </div>

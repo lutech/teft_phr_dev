@@ -1,0 +1,6 @@
+<div class="genericform-style">
+<h2>Strengths</h2>
+    <table style="table-layout:fixed;" class="inline-dataTable dataTable" summary="Strengths" id="DataTables_Table_0">
+        <thead><tr role="row"><th style="min-width:95px;" class="ui-state-default" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Date Created: activate to sort column ascending"><div class="DataTables_sort_wrapper">Date Created<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div></th><th class="ui-state-default" role="columnheader" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Strength Detail: activate to sort column ascending"><div class="DataTables_sort_wrapper">Strength Detail<span class="DataTables_sort_icon css_right ui-icon ui-icon-carat-2-n-s"></span></div></th></tr></thead>
+        <tbody><tr class="odd"><td valign="top" colspan="2" class="dataTables_empty">No data available in table</td></tr></tbody></table>
+</div>

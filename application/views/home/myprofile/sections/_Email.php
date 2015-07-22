@@ -15,7 +15,7 @@
             <div class="col-md-6">
                 <address>
                     <span class="app-read-label">Email Address</span>
-                    <span class="app-read-data">c.smith@yipee.com</span>
+                    <span class="app-read-data">a.smith@yipee.com</span>
                 </address>
             </div>
         </div>

@@ -7,7 +7,7 @@
             <div class="col-md-4">
                 <address>
                     <span class="app-read-label">Login Name</span>
-                    <span class="app-read-data">ciciosmith</span>
+                    <span class="app-read-data">adamsmith</span>
                 </address>
             </div>
             <div class="col-md-6">

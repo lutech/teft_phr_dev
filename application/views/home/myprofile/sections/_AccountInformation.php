@@ -6,7 +6,7 @@
     </div>
     <div class="col-md-8">
         <div class="col-md-12">
-            <span class="h2">Cicio Smith, Sr.</span>
+            <span class="h2">Adam A. Smith, Sr.</span>
             <hr/>
         </div>
         <div class="col-md-12">

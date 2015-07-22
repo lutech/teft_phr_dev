@@ -111,7 +111,7 @@
     }
 
 
-        public function careassessmentdetails($area="ltss", $page="programforms/careassessment/careAssessmentDetails", $subpage="details", $partial="", $pagename = "CARE Assessment Details"){
+        public function careassessmentdetails($area="ltss", $page="programforms/careassessment/CareAssessmentDetails", $subpage="details", $partial="", $pagename = "CARE Assessment Details"){
             if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
             {
                 show_404();
@@ -128,5 +128,22 @@
             $this->load->view("templates/master-layout.php", $data);
         }
 
+
+        public function pssdetails($area="ltss", $page="programforms/pss/pssDetails", $subpage="details", $partial="", $pagename = "PSS Details"){
+            if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
+            {
+                show_404();
+            }
+
+            $data['area'] = $area;
+            $data['page'] = $page;
+            $data['subpage'] = $subpage;
+            $data['partial'] = $partial;
+            $data['tabnav'] = $area;
+            $data['bcnav'] = $page;
+            $data['pagename'] = $pagename;
+            $this->load->helper('url');
+            $this->load->view("templates/master-layout.php", $data);
+        }
 
     }

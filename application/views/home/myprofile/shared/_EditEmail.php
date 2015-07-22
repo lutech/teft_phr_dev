@@ -10,7 +10,7 @@
                     <div class="form-group">
                         <label for="email" class="col-xs-3 control-label">Email Address</label>
                         <div class="col-xs-5">
-                            <input class="form-control" id="email" placeholder="john.doe@email.com" type="email" value="c.smith@yipee.com">
+                            <input class="form-control" id="email" placeholder="john.doe@email.com" type="email" value="a.smith@yipee.com">
                         </div>
                     </div>
                     <div class="form-group">

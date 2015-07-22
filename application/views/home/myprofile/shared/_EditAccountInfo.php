@@ -11,7 +11,7 @@
                         <label for="firstname" class="col-xs-3 control-label">First Name</label>
 
                         <div class="col-xs-5">
-                            <input class="form-control" id="firstname" placeholder="First Name" value="Cicio">
+                            <input class="form-control" id="firstname" placeholder="First Name" value="Adam">
                         </div>
                     </div>
                     <div class="form-group">

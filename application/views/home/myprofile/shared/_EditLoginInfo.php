@@ -9,7 +9,7 @@
                     <div class="form-group">
                         <label for="loginName" class="col-xs-3 control-label">Login Name</label>
                         <div class="col-xs-4">
-                            <input type="text" readonly="readonly" class="form-control" id="loginName" placeholder="Login Name" value="ciciosmith"/>
+                            <input type="text" readonly="readonly" class="form-control" id="loginName" placeholder="Login Name" value="adamsmith"/>
                         </div>
                     </div>
                     <div class="form-group">

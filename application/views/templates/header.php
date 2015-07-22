@@ -89,7 +89,7 @@ else {
             <div class="col-md-12">
                 <div class="col-sm-2">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="<?php echo base_url() . "index.php/home"; ?>" style="width: auto;">TEFT PHR</a>
+                        <a class="navbar-brand" href="<?php echo base_url() . "index.php/home"; ?>" style="width: auto;">LTSS PHR</a>
                     </div>
                 </div>
                     <div class="col-sm-6 text-center">
@@ -110,7 +110,7 @@ else {
                     <div class="col-sm-4">
                         <ul id="profileNavigationMenu" class="pull-right">
                             <li class="header">
-                                Cicio Smith <span class="fa fa-user"></span>
+                                Adam Smith <span class="fa fa-user"></span>
                             </li>
                             <li>
                                 <a href="<?php echo base_url()?>index.php/home/myprofile">Profile</a>

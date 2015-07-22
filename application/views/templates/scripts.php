@@ -378,6 +378,7 @@
             // toggle open class
             slideoutMenu.toggleClass("open");
             $('.side-menu-backdrop').toggleClass("open");
+            $('html').toggleClass("open");
 
             // slide menu
             if (slideoutMenu.hasClass("open")) {
@@ -399,6 +400,7 @@
             // toggle open class
             slideoutMenu.toggleClass("open");
             $('.side-menu-backdrop').toggleClass("open");
+            $('html').toggleClass("open");
 
             // slide menu
             if (slideoutMenu.hasClass("open")) {
