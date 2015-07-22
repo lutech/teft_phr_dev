@@ -35,4 +35,9 @@
             <?php require_once "application/views/emergency/shared/_TabNavigationPartial.php" ?>
         </ul>
     </li>
+    <li class="row" style="background: rgba(0,0,0,0.25); padding: 10px; margin: 5px 0;">
+        <ul class="col-xs-12">
+            <a href="" style="font-weight: normal"><span class="fa fa-thumb-tack"></span> Manage Menu Items</a>
+        </ul>
+    </li>
 </ul>
