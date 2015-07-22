@@ -67,7 +67,6 @@
 		<!-- Main Header -->
 		<?php require 'header.php'; ?>
         <div id="main-nav" class="row" >
-            <?php require 'tab-nav.php'; ?>
 <!--            --><?// php require 'bc-nav.php'; ?>
         </div>
 		<div id="main-body" class="container cl-mcont">
@@ -78,6 +77,10 @@
 
         <!-- Main Footer -->
         <!--< ?php require 'footer.php'; ?> -->
+
+
+        <!-- Modals-->
+<!--        --><?php //require_once 'application/views/shared/modals/navigation/_Modal.php'; ?>
         
         <!-- Main Scripts -->
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/cleanzone.js"></script>

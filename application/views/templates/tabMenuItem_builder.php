@@ -6,8 +6,9 @@ class TabMenuItem {
     public $tabMenuItemIcon;
     public $tabMenuItemClickable;
     public $tabMenuItemUri;
+    public $tabMenuItemModalColumn;
 
-    function __construct($tabMenuItemLabel, $tabMenuItemArea ,$tabMenuItemView, $tabMenuItemIcon, $tabMenuItemClickable, $tabMenuItemUri )
+    function __construct($tabMenuItemLabel, $tabMenuItemArea ,$tabMenuItemView, $tabMenuItemIcon, $tabMenuItemClickable, $tabMenuItemUri, $tabMenuItemModalColumn )
     {
         $this->tabMenuItemLabel = $tabMenuItemLabel;
         $this->tabMenuItemArea = $tabMenuItemArea;
@@ -15,18 +16,21 @@ class TabMenuItem {
         $this->tabMenuItemIcon = $tabMenuItemIcon;
         $this->tabMenuItemClickable = $tabMenuItemClickable;
         $this->tabMenuItemUri = $tabMenuItemUri;
+        $this->tabMenuItemModalColumn = $tabMenuItemModalColumn;
     }
 
     public function RenderTabMenuItem(){
         $isActive = ($this->tabMenuItemArea == $this->tabMenuItemUri->segment(1) && $this->tabMenuItemView == $this->tabMenuItemUri->segment(2));
         $activeClass = ($isActive == true) ? 'selected' : "";
+        $column = ($this->tabMenuItemModalColumn == true) ? 'col-xs-3' : "";
+        $menuItemLabel = ($this->tabMenuItemModalColumn == true ) ? $this->tabMenuItemLabel : "";
         $returnFalse = ($this->tabMenuItemClickable == false) ?  'return false;' : "";
         $tabIcon = (!empty($this->tabMenuItemIcon)) ?  $this->tabMenuItemIcon : "";
 
-        return "<li>
-                    <a class=\"btn btn-default btn-block btn-rad {$activeClass}\" href=\"".base_url()."index.php/{$this->tabMenuItemArea}/{$this->tabMenuItemView}\" {$returnFalse}>
-                        <span class=\"fa {$tabIcon} fa-3x\"></span><br/>
-                        {$this->tabMenuItemLabel}
+        return "<li class='{$column}'>
+                    <a class=\"text-center {$activeClass}\" href=\"".base_url()."index.php/{$this->tabMenuItemArea}/{$this->tabMenuItemView}\" {$returnFalse}>
+                        <span class=\"fa {$tabIcon}\"></span><br/>
+                        <span class=\"label\">{$menuItemLabel}</span>
                     </a>
                 </li>"
             ;
