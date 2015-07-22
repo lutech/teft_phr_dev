@@ -1,6 +1,12 @@
 <ul class="container-fluid app-navigation-menu">
     <li class="row">
         <ul class="col-xs-12">
+            <li class="col-xs-12 menu-header"><span class="h4 text-muted">My Portal</span></li>
+            <?php require_once "application/views/home/shared/_myPortalTabNavigation.php" ?>
+        </ul>
+    </li>
+    <li class="row">
+        <ul class="col-xs-12">
             <li class="col-xs-12 menu-header"><span class="h4 text-muted">Clinical</span></li>
             <?php require_once "application/views/clinical/shared/_TabNavigationPartial.php" ?>
         </ul>

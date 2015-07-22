@@ -920,7 +920,7 @@ table.app-table {
     }
 
     .fa.app-icon-circle {
-       padding: .4em .3em;
+       padding: .3em .3em;
      }
 
     .fa.app-icon-circle:hover,
@@ -1299,4 +1299,51 @@ a:hover {
   li:last-child {
     border-right: none;
   }
+}
+
+
+.slideout-menu {
+  position: fixed;
+  background: @app-theme-color;
+  top: 0;
+  left: -40%;
+  width: 40%;
+  height: 100%;
+  z-index: 1350;
+  overflow-y: auto;
+  padding-top: 50px;
+}
+.slideout-menu h3 {
+  position: relative;
+  padding: 12px 10px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 400;
+  border-bottom: 4px solid #222;
+}
+.slideout-menu .slideout-menu-toggle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+//  height: 50px;
+  padding: 5px 10px;
+  background: @app-theme-color;
+  text-align: right;
+  a {
+    color: white;
+  }
+}
+.side-menu-backdrop {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1040;
+   background-color: rgba(0,0,0,0.5);
+   display: none;
+ }
+.side-menu-backdrop.open {
+  display: block;
 }

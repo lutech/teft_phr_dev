@@ -35,7 +35,7 @@
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
-		
+
 		<!-- Javascript -->
 		<script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/jquery-ui-1.10.2.custom.min.js"></script>
@@ -48,6 +48,7 @@
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/jquery.nanoscroller/javascripts/jquery.nanoscroller.min.js"></script>
 
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/lib/skycons/skycons.js"></script>
+        <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/slideout.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/lib/jquery.sparkline/jquery.sparkline.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/lib/jquery.easypiechart/jquery.easypiechart.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/lib/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
@@ -60,10 +61,17 @@
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/lib/jquery.gritter/js/jquery.gritter.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/lib/jquery.niftymodals/js/jquery.modalEffects.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&"></script>
-		
+
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-	</head>	
+	</head>
 	<body>
+    <nav class="slideout-menu">
+            <div class="slideout-menu-toggle">
+                <a role="button"><span class="fa fa-close fa-2x"></span></a>
+            </div>
+        <?php require_once 'application/views/shared/modals/navigation/_ModalContent.php'; ?>
+    </nav>
+
 		<!-- Main Header -->
 		<?php require 'header.php'; ?>
         <div id="main-nav" class="row" >
@@ -78,10 +86,9 @@
         <!-- Main Footer -->
         <!--< ?php require 'footer.php'; ?> -->
 
-
         <!-- Modals-->
 <!--        --><?php //require_once 'application/views/shared/modals/navigation/_Modal.php'; ?>
-        
+
         <!-- Main Scripts -->
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/cleanzone.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>application/content/js/page-data-tables.js"></script>
@@ -94,5 +101,6 @@
                 echo $Script;
             }
         ?>
+    <div class="side-menu-backdrop"></div>
 	</body>
 </html>
