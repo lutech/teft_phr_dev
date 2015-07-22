@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" uploadOnCheckin="d6bd8077-4925-4efe-a82e-6fd0f1ba494c">
+  <component name="PublishConfigData" uploadOnCheckin="a30743d0-65c3-4945-83fe-2bd57bf5872b">
     <serverData>
       <paths name="TEFT_PHR_DEMO">
         <serverdata>
@@ -17,7 +17,7 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="TEFT_PHR_DEMO" />
+    <option name="myUploadOnCheckinName" value="TEFT_PHR_DEV" />
   </component>
 </project>
 

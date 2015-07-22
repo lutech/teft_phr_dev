@@ -13438,7 +13438,7 @@ table.app-table thead tr th {
   background: #342851;
 }
 #globalNavigationMenu {
-  background-image: url("../img/body-bg.png");
+  background: #ddd;
 }
 #primaryNavigationMenu {
   float: right !important;
