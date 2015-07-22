@@ -34,7 +34,7 @@
         </ul>
         <div class="block app-block app-heading-block">
             <div class="header">
-                <h1>Emergency Preparedness Plan</h1>
+                <h1><span class="fa fa-umbrella"></span> Emergency Preparedness Plan</h1>
             </div>
         </div>
     </div>
