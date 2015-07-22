@@ -1,41 +1,41 @@
 <div class="block">
     <div class="content green-box">
-        <div id="site_statistics2" style="height:152px;"></div>
+        <div id="budgetTracker" style="height:152px;"></div>
     </div>
     <div class="content no-padding">
-        <table class="red">
+        <table class="green">
             <thead>
             <tr>
-                <th>Name</th>
-                <th class="right"><span>25%</span>C.P.U</th>
-                <th class="right"><span>29%</span>Memory</th>
-                <th class="right"><span>16%</span>Disc</th>
+                <th>Last 5 Claims</th>
+                <th>Service</th>
+                <th>Amount Paid</th>
             </tr>
             </thead>
             <tbody class="no-border-x">
             <tr>
-                <td style="width:40%;"><i class="fa fa-sitemap"></i> Server load</td>
-                <td class="text-right">0,2%</td>
-                <td class="text-right">13,2 MB</td>
-                <td class="text-right">0,1 MB/s</td>
+                <td>06/10/2015</td>
+                <td>Personal Assistance</td>
+                <td>$78.59</td>
             </tr>
             <tr>
-                <td><i class="fa fa-tasks"></i> Apps</td>
-                <td class="text-right">0,2%</td>
-                <td class="text-right">13,2 MB</td>
-                <td class="text-right">0,1 MB/s</td>
+                <td>06/09/2015</td>
+                <td>Personal Assistance</td>
+                <td>$124.36</td>
             </tr>
             <tr>
-                <td><i class="fa fa-signal"></i> Process</td>
-                <td class="text-right">0,2%</td>
-                <td class="text-right">13,2 MB</td>
-                <td class="text-right">0,1 MB/s</td>
+                <td>06/08/2015</td>
+                <td>Shared Attendant</td>
+                <td>$25.69</td>
             </tr>
             <tr>
-                <td><i class="fa fa-bolt"></i> Wamp Server</td>
-                <td class="text-right">0,2%</td>
-                <td class="text-right">13,2 MB</td>
-                <td class="text-right">0,1 MB/s</td>
+                <td>06/07/2015</td>
+                <td>Personal Assistance</td>
+                <td>$75.25</td>
+            </tr>
+            <tr>
+                <td>06/06/2015</td>
+                <td>Shared Attendant</td>
+                <td>$140.06</td>
             </tr>
             </tbody>
         </table>

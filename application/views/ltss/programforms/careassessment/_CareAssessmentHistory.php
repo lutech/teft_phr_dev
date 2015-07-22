@@ -1,4 +1,10 @@
-<table class="">
+
+<?php $careAssessmentActions = '
+                <a href="'.base_url().'index.php/ltss/programforms/careassessment/details" role="button" data-toggle="modal"><span class="fa fa-arrow-circle-right"></span>&nbsp;&nbsp;View</a>
+                <br/>
+                <a href="#removeBloodGlucose" role="button" data-toggle="modal"><span class="fa fa-trash"></span>&nbsp;&nbsp;Discard</a>
+'?>
+<table class="app-table">
     <thead>
     <tr>
         <th>
@@ -39,8 +45,7 @@
             Active
         </td>
         <td>
-            <a href="<?php echo base_url(); ?>index.php/ltss/programforms/careassessment/details">View</a>
-            <a href="#">Discard</a>
+            <?php echo $careAssessmentActions ?>
         </td>
     </tr>
     </tbody>

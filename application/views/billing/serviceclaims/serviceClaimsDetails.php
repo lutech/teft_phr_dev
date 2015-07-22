@@ -8,10 +8,12 @@
                 </a>
             </li>
         </ul>
-        <div class="block app-block">
-            <div class="header no-border">
-                <h1>Service Claims</h1>
+        <div class="block app-block app-heading-block">
+            <div class="header">
+                <h1><span class="fa fa-calculator"></span> Service Claims</h1>
             </div>
+        </div>
+        <div class="block app-block">
             <div class="content no-padding">
                 <?php require "_ServiceClaimsContent.php" ?>
             </div>

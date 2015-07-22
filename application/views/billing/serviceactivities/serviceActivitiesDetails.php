@@ -8,10 +8,13 @@
                 </a>
             </li>
         </ul>
-        <div class="block app-block">
-            <div class="header no-border">
-                <h1>Service Activities</h1>
+
+        <div class="block app-block app-heading-block">
+            <div class="header">
+                <h1><span class="fa fa-medkit"></span> Service Activities</h1>
             </div>
+        </div>
+        <div class="block app-block">
             <div class="content">
                 <div id="service-activity-calendar"></div>
             </div>

@@ -1,4 +1,4 @@
-<div class="row">
+
     <div class="col-md-12">
         <div class="form-toolbar container">
             <ul class="nav nav-tabs flat-tabs">
@@ -21,14 +21,13 @@
                     </a>
                 </li>
             </ul>
-            <div class="block app-block">
+            <div class="block app-block app-heading-block">
                 <div class="header">
-                    <h1>LTSS Overview</h1>
+                    <h1><span class="fa fa-list-alt"></span> LTSS Overview</h1>
                 </div>
             </div>
         </div>
-        <div class="content">
-            <?php require "_OverviewContent.php" ?>
-        </div>
+            <div class="content no-padding">
+                <?php require "_OverviewContent.php" ?>
+            </div>
     </div>
-</div>

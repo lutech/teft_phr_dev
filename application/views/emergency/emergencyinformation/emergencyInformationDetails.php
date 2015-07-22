@@ -1,7 +1,7 @@
 <div class="col-md-12">
-    <div class="block app-block">
+    <div class="block app-block app-heading-block">
         <div class="header">
-            <h1>Emergency Information</h1>
+            <h1><span class="fa fa-ambulance"></span> Emergency Information</h1>
         </div>
     </div>
     <?php require "_EmergencyInformationContent.php" ?>

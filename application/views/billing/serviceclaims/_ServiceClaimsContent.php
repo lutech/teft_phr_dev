@@ -1,5 +1,4 @@
-<table class="generalTable">
-    <caption class="caption-header">Claims</caption>
+<table class="app-table">
     <thead>
     <tr>
         <th>Claim Date</th>

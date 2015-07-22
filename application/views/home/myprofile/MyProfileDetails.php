@@ -41,7 +41,7 @@
             </ul>
             <div class="block app-block app-heading-block">
                 <div class="header">
-                    <h1>My Profile</h1>
+                    <h1><span class="fa fa-user"></span> My Profile</h1>
                 </div>
             </div>
         </div>

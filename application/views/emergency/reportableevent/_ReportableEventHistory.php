@@ -10,7 +10,7 @@
         </ul>
         <div class="block app-block app-heading-block">
             <div class="header">
-                <h1>Reportable Events</h1>
+                <h1><span class="fa fa-bullhorn"></span> Reportable Events</h1>
             </div>
         </div>
     </div>
@@ -45,7 +45,7 @@
         <div class="tab-content no-border no-box-shadow no-margin no-padding">
             <div id="allLabResults" class="tab-pane active cont fade in app-block-list no-max-height">
 
-                <table class="">
+                <table class="app-table">
                     <thead>
                     <tr>
                         <th>

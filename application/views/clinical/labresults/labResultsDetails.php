@@ -16,7 +16,7 @@
         </ul>
         <div class="block app-block app-heading-block">
             <div class="header">
-                <h1>Lab Results</h1>
+                <h1><span class="fa fa-flask"></span> Lab Results</h1>
             </div>
         </div>
     </div>

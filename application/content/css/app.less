@@ -1078,9 +1078,13 @@ input[readonly=readonly],
 textarea[readonly=readonly],
 .fieldset-container-one input[type=radio][disabled]:not([checked]) + label:before,
 .fieldset-container-one input[type=checkbox][disabled]:not([checked]) + label:before {
+  cursor: not-allowed;
+  //opacity: .1;
+}
+input[readonly=readonly],
+textarea[readonly=readonly] {
   background-color: rgb(235, 235, 228);
   border: 1px solid rgb(169, 169, 169);
-  cursor: not-allowed;
   //opacity: .1;
 }
 

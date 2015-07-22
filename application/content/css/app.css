@@ -13665,9 +13665,12 @@ input[readonly=readonly],
 textarea[readonly=readonly],
 .fieldset-container-one input[type=radio][disabled]:not([checked]) + label:before,
 .fieldset-container-one input[type=checkbox][disabled]:not([checked]) + label:before {
+  cursor: not-allowed;
+}
+input[readonly=readonly],
+textarea[readonly=readonly] {
   background-color: #ebebe4;
   border: 1px solid #a9a9a9;
-  cursor: not-allowed;
 }
 input:not([type^="button"]),
 input:not([class*=" button"]),
@@ -13811,7 +13814,7 @@ a:hover .button-label {
   height: 100%;
   z-index: 1350;
   overflow-y: auto;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .slideout-menu h3 {
   position: relative;

@@ -22,7 +22,7 @@
         </ul>
         <div class="block app-block app-heading-block">
             <div class="header">
-                <h1>My Health Data</h1>
+                <h1><span class="fa fa-stethoscope"></span> My Health Data</h1>
             </div>
         </div>
     </div>

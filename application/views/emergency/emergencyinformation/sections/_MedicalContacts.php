@@ -1,31 +1,21 @@
-<i class="icon-eye"></i>
-<i class="icon-medical"></i>
-<i class="icon-ecg"></i>
-<i class="icon-microscope"></i>
-<i class="icon-stethoscope"></i>
-<i class="icon-brain"></i>
-<i class="icon-first"></i>
-<i class="icon-heart"></i>
-<i class="icon-pill"></i>
-<i class="icon-syringe"></i>
-<i class="icon-syringe-1"></i>
-<i class="icon-caduceus"></i>
-<i class="icon-band"></i>
-<i class="icon-water"></i>
-<i class="icon-injection"></i>
-<i class="icon-medicine"></i>
-<i class="icon-medical-1"></i>
-<i class="icon-molar"></i>
-<i class="icon-virus"></i>
-<i class="icon-pill-1"></i>
-<i class="icon-drugs"></i>
-<i class="icon-medical-2"></i>
-<i class="icon-test"></i>
-<i class="icon-ear"></i>
-<i class="icon-telescope"></i>
-<i class="icon-atom"></i>
-<i class="icon-broken"></i>
-<i class="icon-medical-3"></i>
-<i class="icon-hot"></i>
-<i class="icon-antivirus"></i>
-<i class="icon-hospital"></i>
+<ul>
+    <li>
+        <strong>Dr. Brandon Moore<ul>
+            <li><b>Primary Relationship:</b>&nbsp;Legal Guardian</li>
+            <li><b>Secondary Relationship:</b>&nbsp;Representative</li>
+            <li><b>email:</b>&nbsp;s.jacobs@yipee.com</li>
+            <li><b>Phone:</b>&nbsp;(855) 698-482</li>
+            <li><b>Address:</b>&nbsp;256 Nantucket Street, Adams CO 12345</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Dr. Jen Green</strong>
+        <ul>
+            <li><b>Primary Relationship:</b>&nbsp;Relative</li>
+            <li><b>Secondary Relationship:</b>&nbsp;Other (Spouse)</li>
+            <li><b>email:</b>&nbsp;debra.j@yipee.com</li>
+            <li><b>Phone:</b>&nbsp;(855) 994-4857</li>
+            <li><b>Address:</b>&nbsp;101 Strawberry Rd, Adams CO 12345</li>
+        </ul>
+    </li>
+</ul>

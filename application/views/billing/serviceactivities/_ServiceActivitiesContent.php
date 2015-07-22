@@ -1,7 +1,4 @@
 <table class="app-table">
-    <caption>
-        Services
-    </caption>
     <thead>
     <tr>
         <th>Service Name</th>

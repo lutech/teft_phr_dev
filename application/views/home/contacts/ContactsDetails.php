@@ -26,9 +26,9 @@
                 </a>
             </li>
         </ul>
-        <div class="block app-block">
+        <div class="block app-block app-heading-block">
             <div class="header">
-                <h1>My Contacts</h1>
+                <h1><span class="fa fa-users"></span> My Contacts</h1>
             </div>
         </div>
     </div>
