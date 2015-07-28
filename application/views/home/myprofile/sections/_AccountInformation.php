@@ -6,34 +6,34 @@
     </div>
     <div class="col-md-8">
         <div class="col-md-12">
-            <span class="h2">Adam A. Smith, Sr.</span>
+            <span class="h2">Adam A. Smith</span>
             <hr/>
         </div>
         <div class="col-md-12">
             <div class="col-md-6">
                 <address>
-                    <span class="app-read-label">Date of Birth</span>
-                    <span class="app-read-data">08/21/1952</span>
+                    <span class="app-read-label">Provider ID</span>
+                    <span class="app-read-data">98775842364</span>
                 </address>
             </div>
             <div class="col-md-6">
                 <address>
-                    <span class="app-read-label">SSN#</span>
-                    <span class="app-read-data">***-**-1188</span>
+                    <span class="app-read-label">Login Name</span>
+                    <span class="app-read-data">adam.smith@divofmed.com</span>
                 </address>
             </div>
         </div>
         <div class="col-md-12">
             <div class="col-md-6">
                 <address>
-                    <span class="app-read-label">Current Address</span>
-                    <span class="app-read-data">2190 Springs Rd. <br/>Aurora CO, 80010</span>
+                    <span class="app-read-label">Primary Agency</span>
+                    <span class="app-read-data">Division of Medicaid</span>
                 </address>
             </div>
             <div class="col-md-6">
                 <address>
-                    <span class="app-read-label">Address Type</span>
-                    <span class="app-read-data">Facility <small class="text-muted">(New Haven)</small></span>
+                    <span class="app-read-label">Current Address</span>
+                    <span class="app-read-data">2190 Springs Rd. <br/>Aurora CO, 80010</span>
                 </address>
             </div>
         </div>
@@ -47,21 +47,7 @@
             <div class="col-md-6">
                 <address>
                     <span class="app-read-label">Primary Email</span>
-                    <span class="app-read-data">c.smith@yipee.com</span>
-                </address>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div class="col-md-6">
-                <address>
-                    <span class="app-read-label">Medicaid #</span>
-                    <span class="app-read-data">16843854176</span>
-                </address>
-            </div>
-            <div class="col-md-6">
-                <address>
-                    <span class="app-read-label">Medicare #</span>
-                    <span class="app-read-data">68434684684</span>
+                    <span class="app-read-data">adam.smith@divofmed.com</span>
                 </address>
             </div>
         </div>

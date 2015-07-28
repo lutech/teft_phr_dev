@@ -30,8 +30,8 @@
 <div class=" col-md-9">
     <div class="mail-inbox">
         <div class="head">
-            <h3>Inbox <span>(13 new)</span></h3>
-            <input type="text" placeholder="Search mail..." class="form-control">
+            <h3>Inbox <span>(6 new)</span></h3>
+            <input type="text" placeholder="Search messages..." class="form-control">
         </div>
         <div class="filters">
             <input id="check-all" type="checkbox" name="checkall"><span>Select All</span>

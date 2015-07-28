@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" uploadOnCheckin="a30743d0-65c3-4945-83fe-2bd57bf5872b">
+  <component name="PublishConfigData" uploadOnCheckin="046c02fe-eb52-460f-9406-0e52d9493d05">
     <serverData>
       <paths name="ELTSS_PROVIDER_PORTAL_DEV">
         <serverdata>
@@ -24,7 +24,7 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="TEFT_PHR_DEV" />
+    <option name="myUploadOnCheckinName" value="ELTSS_PROVIDER_PORTAL_DEV" />
   </component>
 </project>
 

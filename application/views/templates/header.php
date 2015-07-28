@@ -100,7 +100,7 @@ else {
                                 Adam Smith <span class="fa fa-user"></span>
                             </li>
                             <li>
-                                <a href="<?php echo base_url()?>index.php/home/myprofile">Division of Medicaid</a>
+                                <a href="#">Division of Medicaid</a>
                             </li>
                             <li>
                                 <a href="<?php echo base_url()?>index.php/home/myprofile">My Profile</a>

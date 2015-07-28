@@ -34,14 +34,14 @@
 <!--    </div>-->
 <!--</div>-->
 <div class="panel panel-default">
-    <div class="panel-heading">
-        <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#" href="#myprofile-3" class="collapsed">
-                <span class="fa fa-angle-right"></span>
-                Identifiers
-            </a>
-        </h4>
-    </div>
+<!--    <div class="panel-heading">-->
+<!--        <h4 class="panel-title">-->
+<!--            <a data-toggle="collapse" data-parent="#" href="#myprofile-3" class="collapsed">-->
+<!--                <span class="fa fa-angle-right"></span>-->
+<!--                Identifiers-->
+<!--            </a>-->
+<!--        </h4>-->
+<!--    </div>-->
     <div id="myprofile-3" class="panel-collapse collapse">
         <div class="panel-body app-block-list no-padding">
             <?php require 'sections/_Identifiers.php'; ?>

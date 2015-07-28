@@ -13536,7 +13536,7 @@ a:focus .fa.app-icon-circle {
   color: white;
 }
 .app-navigation-menu li .fa.app-icon-circle {
-  padding: .3em .3em;
+  padding: .3em .2em;
 }
 .app-navigation-menu li a.selected {
   color: #e27000;
@@ -13571,8 +13571,8 @@ a:focus .fa.app-icon-circle {
   content: "\f155";
   font-size: 50%;
   position: absolute;
-  left: 41%;
-  top: 36%;
+  left: 34%;
+  top: 29%;
   color: inherit;
 }
 .fa-file-o.fa-3x.app-icon-service-claim:after {
