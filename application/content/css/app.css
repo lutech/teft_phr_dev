@@ -13483,9 +13483,9 @@ table.app-table thead tr th {
 }
 .app-navigation-menu .menu-header {
   text-transform: uppercase;
-  margin: 30px 0 10px 0;
+  margin: 30px 0 15px 0;
   text-align: left;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.1);
   padding: 8px 20px 2px 20px;
 }
 .app-navigation-menu .menu-header > span {
@@ -13815,6 +13815,32 @@ a:hover .button-label {
   z-index: 1350;
   overflow-y: auto;
   padding-top: 30px;
+}
+.slideout-menu::-webkit-scrollbar {
+  width: 12px;
+}
+.slideout-menu::-webkit-scrollbar-track-piece {
+  border: 8px;
+  border-color: black;
+}
+.slideout-menu::-webkit-scrollbar:vertical {
+  background: rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+.slideout-menu::-webkit-scrollbar:vertical:corner-present {
+  border-bottom-width: 0;
+}
+.slideout-menu::-webkit-scrollbar-thumb:vertical {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  max-width: 4px;
+  min-height: 20px;
+}
+.slideout-menu::-webkit-scrollbar-track-piece:vertical:start {
+  margin-top: 2px !important;
+}
+.slideout-menu::-webkit-scrollbar-track-piece:vertical:start {
+  margin-bottom: 2px !important;
 }
 .slideout-menu h3 {
   position: relative;
