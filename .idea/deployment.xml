@@ -2,6 +2,13 @@
 <project version="4">
   <component name="PublishConfigData" uploadOnCheckin="a30743d0-65c3-4945-83fe-2bd57bf5872b">
     <serverData>
+      <paths name="ELTSS_PROVIDER_PORTAL_DEV">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="TEFT_PHR_DEMO">
         <serverdata>
           <mappings>

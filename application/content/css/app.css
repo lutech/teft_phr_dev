@@ -13423,12 +13423,12 @@ table.app-table thead tr th {
 }
 .fa.app-icon-circle {
   background: transparent;
-  border: 2px solid #e0e0e0;
+  border: 2px solid rgba(255, 255, 255, 0.2);
   padding: .3em .3em;
   border-radius: 50%;
 }
-.fa.app-icon-circle:hover,
-.fa.app-icon-circle:focus {
+a:hover .fa.app-icon-circle,
+a:focus .fa.app-icon-circle {
   background: rgba(255, 255, 255, 0.15);
 }
 .fa.app-icon-circle:active {
@@ -13438,6 +13438,7 @@ table.app-table thead tr th {
   background: #342851;
 }
 #globalNavigationMenu {
+  padding: 5px 0;
   background: #ddd;
 }
 #primaryNavigationMenu {
@@ -13491,7 +13492,15 @@ table.app-table thead tr th {
 .app-navigation-menu .menu-header > span {
   color: #5d4c7c !important;
   color: #e0e0e0 !important;
-  font-weight: bold !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+.app-navigation-menu .menu-footer {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  margin: 5px 0;
+}
+.app-navigation-menu .menu-footer a {
+  font-weight: normal;
 }
 .app-navigation-menu ul {
   padding: 0;
@@ -13521,7 +13530,8 @@ table.app-table thead tr th {
 .app-navigation-menu li a:focus {
   background: none !important;
 }
-.app-navigation-menu li .fa:before {
+.app-navigation-menu li .fa:before,
+.app-navigation-menu li .fa:after {
   color: #5d4c7c;
   color: white;
 }
@@ -13551,6 +13561,24 @@ table.app-table thead tr th {
   left: 42%;
   top: 25%;
   color: inherit;
+}
+.fa-comment-o.fa-3x.app-icon-report-problem:after {
+  font-size: 40%;
+  left: 47%;
+  top: 39%;
+}
+.fa-file-o.app-icon-service-claim:after {
+  content: "\f155";
+  font-size: 50%;
+  position: absolute;
+  left: 41%;
+  top: 36%;
+  color: inherit;
+}
+.fa-file-o.fa-3x.app-icon-service-claim:after {
+  font-size: 50%;
+  left: 41%;
+  top: 36%;
 }
 .icon-lungs {
   margin-right: 3%;
@@ -13869,7 +13897,7 @@ a:hover .button-label {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   display: none;
 }
 .side-menu-backdrop.open {

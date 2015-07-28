@@ -17,7 +17,7 @@
                 events: [
                     {
                         id: '1',
-                        title: 'Nurse Visit',
+                        title: 'Service Activity',
                         start: '2015-07-14'
                     },
                     {
@@ -32,12 +32,12 @@
                     },
                     {
                         id: '4',
-                        title: 'Dr. Appointment',
+                        title: 'Service Activity',
                         start: '2015-07-22'
                     },
                     {
                         id: '5',
-                        title: 'Dr. Appointment',
+                        title: 'Service Activity',
                         start: '2015-07-02'
                     },
                     {
@@ -46,16 +46,28 @@
                         start: '2015-07-026'
                     }, {
                         id: '7',
-                        title: 'Nurse Visit',
+                        title: 'Service Activity',
                         start: '2015-07-20'
                     }, {
                         id: '8',
-                        title: 'Nurse Visit',
+                        title: 'Service Activity',
                         start: '2015-07-25'
                     }, {
                         id: '9',
-                        title: 'Nurse Visit',
+                        title: 'Service Activity',
                         start: '2015-06-29'
+                    }, {
+                        id: '10',
+                        title: 'Service Activity',
+                        start: '2015-07-28'
+                    }, {
+                        id: '11',
+                        title: 'Service Activity',
+                        start: '2015-07-29'
+                    }, {
+                        id: '12',
+                        title: 'Service Activity',
+                        start: '2015-07-31'
                     }
                 ]
                 

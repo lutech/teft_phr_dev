@@ -3,24 +3,26 @@
         <div class="content">
             <div class="">
                 <button data-target=".mail-nav" data-toggle="collapse" type="button" class="navbar-toggle"><span class="fa fa-chevron-down"></span></button>
-                <p class="description">DIRECT Exchange Network</p>
+                <p class="description">LTSS Network</p>
             </div>
             <div class="mail-nav collapse">
                 <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#"><i class="fa fa-warning"></i><span class="label label2 pull-right">8</span> Alerts</a></li>
                     <li class="active"><a href="#"><span class="label label-primary pull-right">6</span><i class="fa fa-inbox"></i> Inbox</a></li>
-                    <li><a href="#"><i class="fa fa-envelope"></i> Sent Mail</a></li>
-                    <li><a href="#"><i class="fa fa-suitcase"></i> Important</a></li>
+                    <li><a href="#"><i class="fa fa-paper-plane"></i> Sent</a></li>
                     <li><a href="#"><span class="label label-default pull-right">3</span><i class="fa fa-file-o"></i> Drafts</a></li>
                     <li><a href="#"><i class="fa fa-star-o"></i> Tags</a></li>
-                    <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
                 </ul>
                 <p class="title">Labels</p>
                 <ul class="nav nav-pills nav-stacked">
-                    <li><a href="#"><span class="label label1 pull-right">0</span> Inbox</a></li>
-                    <li><a href="#"><span class="label label2 pull-right">8</span>Sent Mail</a></li>
-                    <li><a href="#"><span class="label label3 pull-right">4</span>Important</a></li>
+                    <li><a href="#"><span class="label label2 pull-right">2</span>Past Due Alerts</a></li>
+                    <li><a href="#"><span class="label label-primary pull-right">4</span>Flagged</a></li>
                 </ul>
-                <div class="compose"><a class="btn btn-flat btn-primary">Compose Email</a></div>
+                <p class="title"></p>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#"><i class="fa fa-trash-o"></i> Trash</a></li>
+                </ul>
+                <div class="compose"><a class="btn btn-flat btn-primary">New Message</a></div>
             </div>
         </div>
     </div>
