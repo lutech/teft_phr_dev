@@ -410,7 +410,12 @@
             } else {
                 slideoutMenu.animate({
                     left: -slideoutMenuWidth
-                }, 250);
+                }, {
+                    duration: 250,
+                    complete: function() {
+                        $(this).scrollTop(0);
+                    }
+                });
             }
         });
     });

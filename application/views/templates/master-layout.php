@@ -74,9 +74,6 @@
 
 		<!-- Main Header -->
 		<?php require 'header.php'; ?>
-        <div id="main-nav" class="row" >
-<!--            --><?// php require 'bc-nav.php'; ?>
-        </div>
 		<div id="main-body" class="container cl-mcont">
 			<!-- Main Content -->
 		<?php require "application/views/{$area}/{$page}.php";?>

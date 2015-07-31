@@ -115,6 +115,10 @@ else {
         <div class="row no-margin">
             <?php require 'tab-nav.php'; ?>
         </div>
+
+        <div id="main-nav" class="row" >
+            <?php require 'bc-nav.php'; ?>
+        </div>
         <!-- </div> /.container -->
     </div><!-- /.navbar -->
 
