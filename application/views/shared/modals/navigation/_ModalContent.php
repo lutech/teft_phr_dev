@@ -41,6 +41,13 @@
 <!--            --><?php //require_once "application/views/emergency/shared/_TabNavigationPartial.php" ?>
 <!--        </ul>-->
 <!--    </li>-->
+
+    <li class="row">
+        <ul class="col-xs-12">
+            <li class="col-xs-12 menu-header"><span class="h4 text-muted">Sandbox</span></li>
+            <?php require_once "application/views/sandbox/billing/shared/_TabNavigationPartial.php" ?>
+        </ul>
+    </li>
     <li class="row menu-footer">
         <ul class="col-xs-12">
             <a href=""><span class="fa fa-thumb-tack"></span> Manage Menu Items</a>

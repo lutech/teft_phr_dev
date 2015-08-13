@@ -7,8 +7,9 @@ class TabMenuItem {
     public $tabMenuItemClickable;
     public $tabMenuItemUri;
     public $tabMenuItemModalColumn;
+    public $isSubTabMenuItem;
 
-    function __construct($tabMenuItemLabel, $tabMenuItemArea ,$tabMenuItemView, $tabMenuItemIcon, $tabMenuItemClickable, $tabMenuItemUri, $tabMenuItemModalColumn )
+    function __construct($tabMenuItemLabel, $tabMenuItemArea ,$tabMenuItemView, $tabMenuItemIcon, $tabMenuItemClickable, $tabMenuItemUri, $tabMenuItemModalColumn)
     {
         $this->tabMenuItemLabel = $tabMenuItemLabel;
         $this->tabMenuItemArea = $tabMenuItemArea;
@@ -20,13 +21,17 @@ class TabMenuItem {
     }
 
     public function RenderTabMenuItem(){
-        $isActive = ($this->tabMenuItemArea == $this->tabMenuItemUri->segment(1) && $this->tabMenuItemView == $this->tabMenuItemUri->segment(2));
+        $segment1 =  $this->tabMenuItemUri->segment(1);
+        $segment2 =  $this->tabMenuItemUri->segment(2);
+        $segment3 = $this->tabMenuItemUri->segment(3);
+
+        $isActive = ($this->tabMenuItemArea == $segment1 && $this->tabMenuItemView == $segment2) ||
+            ($this->tabMenuItemArea == $segment1."/".$segment2 &&  $this->tabMenuItemView == $segment3) ;
         $activeClass = ($isActive == true) ? 'selected' : "";
         $column = ($this->tabMenuItemModalColumn == true) ? 'col-xs-4 col-sm-3' : "";
         $menuItemLabel = ($this->tabMenuItemModalColumn == true ) ? $this->tabMenuItemLabel : "";
         $returnFalse = ($this->tabMenuItemClickable == false) ?  'return false;' : "";
         $tabIcon = (!empty($this->tabMenuItemIcon)) ?  $this->tabMenuItemIcon : "";
-
         return "<li class='{$column}'>
                     <a class=\"text-center {$activeClass}\" href=\"".base_url()."index.php/{$this->tabMenuItemArea}/{$this->tabMenuItemView}\" {$returnFalse}>
                         <span class=\"fa {$tabIcon}\"></span><br/>
