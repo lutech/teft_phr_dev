@@ -31,10 +31,10 @@
 <div class="row no-margin">
     <div class=" tab-content no-style no-padding">
         <div id="clientAdvancedSearchTab" class="tab-pane active cont fade in">
-            <?php require 'search/client.php'; ?>
+            <?php require 'search/clients/_Search.php'; ?>
         </div>
         <div id="serviceActivityAdvancedSearchTab" class="tab-pane cont fade">
-            <?php require 'search/serviceactivities.php'; ?>
+            <?php require 'search/serviceactivities/_Search.php'; ?>
         </div>
         <div id="claimAdvancedSearchTab" class="tab-pane cont fade">
             <input type="search" id="globalSearch" placeholder="Staff Name/ID" class="form-control"/>
