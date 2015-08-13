@@ -5,6 +5,10 @@
         <input type="search" id="clientName" placeholder="Name/ID/MA#" class="form-control"/>
     </div>
     <div class="form-group">
+        <label for="staffName">Staff:</label>
+        <input type="search" id="staffName" placeholder="Name/ID" class="form-control"/>
+    </div>
+    <div class="form-group">
         <label for="serviceDate">Service Date:</label>
         <input type="search" id="serviceDate" placeholder="mm/dd/yyyy" class="form-control"/>
     </div>
@@ -107,10 +111,6 @@
                 <label for="closed">Needs Authorization</label>
             </div>
         </div>
-    </div>
-    <div class="form-group">
-        <label for="staffName">Staff Name:</label>
-        <input type="search" id="staffName" placeholder="Name/ID" class="form-control"/>
     </div>
     <hr/>
     <button type="button" class="btn btn-primary btn-block">
