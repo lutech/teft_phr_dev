@@ -1,3 +1,1 @@
-<div class="row">
-    <?php require "serviceactivities/serviceActivitiesDetails.php" ?>
-</div>
+<?php require "serviceactivities/serviceActivitiesDetails.php" ?>

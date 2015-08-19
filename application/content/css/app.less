@@ -1125,6 +1125,10 @@ button.close {
   background: transparent;
 }
 
+input[type=radio] + label,
+input[type=checkbox] + label {
+  text-decoration: none !important;
+}
 //ltss overrides
 .genericform-style {
 
@@ -1237,6 +1241,7 @@ textarea, select {
 .frequency-label {
   max-width: none !important;
   width: auto !important;
+  display: inline-block !important;
 }
 
 .extension {
@@ -1335,6 +1340,8 @@ small {
   > .row {
     margin: 0 !important;
     padding: 10px 0 !important;
+    display: inline-block;
+    float: left;
   }
   > .row:nth-child(even) {
     background: #FAF9FE;
@@ -1344,6 +1351,26 @@ small {
     .single-accordion-style;
   }
 
+  > .row.active {
+    background: #3F7ECD;
+    color: white;
+    span {
+      color: white;
+    }
+  }
+
+}
+
+.app-block-list-item {
+  padding: 0px 0px 20px!important;
+  margin-bottom: 10px !important;
+  display: block !important;
+  float: none !important;
+  //border-left: 5px solid #D7D7D7 !important;
+}
+
+.app-block-list-item.warning {
+  border-left: 5px solid @app-toolbar-active-bgcolor !important;
 }
 
 
@@ -1607,7 +1634,15 @@ html.open {
 .accordion-tab-button:active {
   background: #cccccc;
 }
-
+.tab-content {
+  box-shadow: none;
+}
+.app-panel-heading {
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 5px;
+  text-align: center;
+  color: #777;
+}
 .app-left-aside {
   padding: 0 20px;
 .tab-content {
@@ -1626,6 +1661,20 @@ html.open {
       }
     }
   }
+
+  .search-panel {
+    padding: 10px 15px;
+    background: #E4E4E4;
+    .tab-content {
+      padding: 0;
+      border: none;
+    }
+    label,
+    .label {
+      text-decoration: underline;
+    }
+  }
+
   input[type*=search]::-webkit-input-placeholder,
   input[type*=search]:-moz-placeholder,
   input[type*=search]::-moz-placeholder,

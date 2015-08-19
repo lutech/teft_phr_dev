@@ -1,13 +1,16 @@
-<div id="bc-nav" class="page-head role="navigation">
+<div id="bc-nav" class="page-head role=" navigation">
 
-<div class="col-lg-1 col-md-0 col-xs-0"></div>
-<div class="col-lg-3 col-md-3 col-xs-12 col-lg-pull-1 pull-right">
+<div class="col-xs-3 no-padding">
+<!--    <a href=" " class="h4"><span class="fa fa-arrow-left"></span> Back</a>-->
 </div>
-<div class="col-lg-7 col-lg-pull-0 col-md-9 col-sm-12">
-    <a href=" " class="h4"><span class="fa fa-arrow-left"></span> Back</a>
+<div class="col-xs-6">
+    <div class="container-fluid">
+        <?php require "application/views/templates/_PageHeadingPartial.php"; ?>
+    </div>
 </div>
+<div class="col-xs-3">
 
-
+</div>
 <!--    <div class="container">-->
 <!--        <h2>--> <?php //echo $pagename ?><!--</h2>-->
 <!--        <ol class="breadcrumb">-->

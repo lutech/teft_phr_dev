@@ -1,7 +1,7 @@
 <!doctype html>
 <html id="html">
 	<head>
-		<title><?php echo "LTSS PHR Portal - {$page}" ?></title>
+		<title><?php echo "LTSS PHR Portal - {$pagename}" ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Fonts -->
@@ -76,19 +76,19 @@
 		<!-- Main Header -->
 		<?php require 'header.php'; ?>
 		<div id="main-body" class="cl-mcont tab-content">
+
+
             <div id="main-content" class="tab-pane active in cont fade row">
-                <div class="col-lg-1 col-md-0 col-xs-0"></div>
-                <div class="col-lg-3 col-md-3 col-xs-12 col-lg-pull-1 pull-right fixed-menu">
-                    <?php require_once 'application/views/templates/aside-left.php'; ?>
-                </div>
-                <div class="col-lg-7 col-lg-pull-0 col-md-9 col-sm-12" style="border-right: 4px double #d7d7d7">
-                    <div class="container-fluid">
-                        <!-- Main Content -->
-                        <?php require "application/views/{$area}/{$page}.php";?></div>
-                </div>
+                <?php
+                if (!empty($layout)) {
+                    require "application/views/templates/{$layout}.php";
+                } else {
+                    require "application/views/templates/_SingleColumnLayout.php";
+                };
+                ?>
             </div>
             <div id="global-search" class="tab-pane cont fade row">
-                <?php require_once 'application/views/shared/_GlobalSearchPartial.php'; ?>
+                <?php require_once 'application/views/shared/GlobalSearchPartial.php'; ?>
             </div>
 <!--            <div class="md-overlay"></div>-->
 		</div>
