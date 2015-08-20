@@ -267,6 +267,63 @@
                     </table>
                 </div>
         </li>
+        <br/>
+        <li class="row block container-fluid app-block-list-item">
+
+            <div class="row no-padding no-margin">
+
+                <div class="row no-padding no-margin">
+                    <div class="col-xs-12">
+                        <span class="h4">
+                            <strong>July 3rd,</strong>
+                            <span style="float: right">2015</span>
+                    </span>
+                    </div>
+                </div>
+                <br/>
+
+                <div class="row no-padding no-margin">
+                    <div class="col-xs-12">
+                        <div class="row no-padding no-margin">
+                            <div class="col-xs-12 no-padding">
+                                <div class="col-xs-4 no-padding">
+                                    <span class="h3 text-muted"><strong>4 </strong><small>Service Activities</small></span>
+                                </div>
+                                <div class="col-xs-4 no-padding">
+                                </div>
+                                <div class="col-xs-4 no-padding" style="text-align: right">
+                                    <span class="h3 text-muted"><strong class="fa fa-check-circle text-success"></strong> <strong class="text-success">Paid</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <a href="">Action</a>
+                <hr/>
+                <div class="row no-margin">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Service Name</th>
+                                <th>Provider</th>
+                                <th>Staff</th>
+                                <th>Clock-In/Clock-Out</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Personal Assistance</td>
+                            <td>ABC Provider (234321452345)</td>
+                            <td>Carrol Lot</td>
+                            <td>10:00AM - 10:30AM</td>
+                            <td><a href="#">Action</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </li>
     </ul>
 </div>
 </div>

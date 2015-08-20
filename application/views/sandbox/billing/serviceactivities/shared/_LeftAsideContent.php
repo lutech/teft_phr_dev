@@ -76,11 +76,11 @@
                     </div>
                     <div class="">
                         <input type="checkbox" id="providerOnHold"/>
-                        <label for="providerOnHold">Provider On Hold</label>
+                        <label for="providerOnHold">Provider In Process</label>
                     </div>
                     <div class="">
                         <input type="checkbox" id="dhmhOnHold"/>
-                        <label for="dhmhOnHold">DHMH On Hold</label>
+                        <label for="dhmhOnHold">DHMH In Process</label>
                     </div>
                 </div>
             </div>
