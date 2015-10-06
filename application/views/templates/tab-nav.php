@@ -22,10 +22,10 @@
 </ul>
 <ul id="primaryNavigationMenu" class="nav navbar-nav navbar-right no-margin">
     <?php require_once "application/views/home/shared/_TabNavigationPartial.php" ?>
-    <li>
-        <a href="#global-search" data-toggle="tab"><span class="fa fa-search app-icon-circle fa-2x"></span></a>
+<!--    <li>-->
+<!--        <a href="#global-search" data-toggle="tab"><span class="fa fa-search app-icon-circle fa-2x"></span></a>-->
 <!--        <ul class="dropdown-menu app-navigation-menu" style="background-color: #342851;">-->
 <!--            <input type="text" value="search" class="form-control input-large" />-->
 <!--        </ul>-->
-    </li>
+<!--    </li>-->
 </ul>

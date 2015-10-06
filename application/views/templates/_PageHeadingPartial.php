@@ -19,7 +19,7 @@ if (!empty($pagename)) {
 
     echo '
         <div class="row">
-            <h4 style="margin: 0; text-align: center; color: #453162;">'.$pagename.'</h4>
+            <h4 style="margin: 0; text-align: center; color: #453162; font-weight: bold !important">'.$pagename.'</h4>
         </div>
     ';
 }

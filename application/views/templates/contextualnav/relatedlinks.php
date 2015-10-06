@@ -6,6 +6,5 @@
             </li>
         ';
 
-    require 'application/views/'.$area.'/shared/_RelatedLinks.php';
+    require 'application/views/'.$area.'/'.$contextualnav.'/shared/contextualnav/_RelatedLinks.php';
 
-?>

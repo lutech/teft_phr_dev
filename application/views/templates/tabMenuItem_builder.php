@@ -29,13 +29,14 @@ class TabMenuItem {
             ($this->tabMenuItemArea == $segment1."/".$segment2 &&  $this->tabMenuItemView == $segment3) ;
         $activeClass = ($isActive == true) ? 'selected' : "";
         $column = ($this->tabMenuItemModalColumn == true) ? 'col-xs-4 col-sm-3' : "";
-        $menuItemLabel = ($this->tabMenuItemModalColumn == true ) ? $this->tabMenuItemLabel : "";
+        $menuItemLabel =  $this->tabMenuItemLabel;
+        $hideLabel = ($this->tabMenuItemModalColumn == true ) ? "" : 'ui-hide';
         $returnFalse = ($this->tabMenuItemClickable == false) ?  'return false;' : "";
         $tabIcon = (!empty($this->tabMenuItemIcon)) ?  $this->tabMenuItemIcon : "";
         return "<li class='{$column}'>
-                    <a class=\"text-center {$activeClass}\" href=\"".base_url()."index.php/{$this->tabMenuItemArea}/{$this->tabMenuItemView}\" {$returnFalse}>
+                    <a class=\"text-center {$activeClass}\" href=\"".base_url()."index.php/{$this->tabMenuItemArea}/{$this->tabMenuItemView}\"  onclick=\"{$returnFalse}\"  title=\"{$menuItemLabel}\">
                         <span class=\"fa {$tabIcon}\"></span><br/>
-                        <span class=\"label\">{$menuItemLabel}</span>
+                        <span class=\"label {$hideLabel}\">{$menuItemLabel}</span>
                     </a>
                 </li>"
             ;

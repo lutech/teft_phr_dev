@@ -1,9 +1,5 @@
 
-<div class="row dash-cols">
-    <div class="col-lg-12">
-        <?php require "sections/_UpcomingEvents.php" ?>
-    </div>
-</div>
+<?php require "sections/_UpcomingEvents.php" ?>
 <!--<div class="row dash-cols">-->
 <!--    <div class="col-sm-6 col-md-6">-->
 <!--        --><?php //require "sections/_LtssApplicationStatus.php" ?>
