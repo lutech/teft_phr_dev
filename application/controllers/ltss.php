@@ -9,11 +9,17 @@
 	}
 
 
-    public function overview($area="ltss", $page="overview", $subpage="", $partial="", $pagename = "Overview"){
+    public function overview($area="ltss", $page="overview", $subpage="", $partial="", $pagename = "Overview", $layout = "_ThreeColumnRightAsideLayout", $contextualnav=""){
         if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
         {
             show_404();
         }
+
+        //Layout
+        $data['layout'] = $layout;
+
+        //Contextual Navigation
+        $data['contextualnav'] = $contextualnav;
 
         $data['area'] = $area;
         $data['page'] = $page;
@@ -25,11 +31,17 @@
         $this->load->helper('url');
         $this->load->view("templates/master-layout.php", $data);
     }
-    public function services($area="ltss", $page="services", $subpage="", $partial="", $pagename = "Services"){
+    public function services($area="ltss", $page="services", $subpage="", $partial="", $pagename = "Services", $layout = "_ThreeColumnRightAsideLayout", $contextualnav=""){
         if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
         {
             show_404();
         }
+
+        //Layout
+        $data['layout'] = $layout;
+
+        //Contextual Navigation
+        $data['contextualnav'] = $contextualnav;
 
         $data['area'] = $area;
         $data['page'] = $page;
@@ -42,11 +54,17 @@
         $this->load->view("templates/master-layout.php", $data);
     }
 
-    public function programforms($area="ltss", $page="programforms", $subpage="", $partial="", $pagename = "Program Forms"){
+    public function programforms($area="ltss", $page="programforms", $subpage="", $partial="", $pagename = "Program Forms", $layout = "_ThreeColumnRightAsideLayout", $contextualnav=""){
         if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
         {
             show_404();
         }
+
+        //Layout
+        $data['layout'] = $layout;
+
+        //Contextual Navigation
+        $data['contextualnav'] = $contextualnav;
 
         $data['area'] = $area;
         $data['page'] = $page;
@@ -59,11 +77,17 @@
         $this->load->view("templates/master-layout.php", $data);
     }
 
-    public function qualityassurance($area="ltss", $page="qualityassurance", $subpage="", $partial="", $pagename = "Quality Assurance"){
+    public function qualityassurance($area="ltss", $page="qualityassurance", $subpage="", $partial="", $pagename = "Quality Assurance", $layout = "_ThreeColumnRightAsideLayout", $contextualnav=""){
         if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
         {
             show_404();
         }
+
+        //Layout
+        $data['layout'] = $layout;
+
+        //Contextual Navigation
+        $data['contextualnav'] = $contextualnav;
 
         $data['area'] = $area;
         $data['page'] = $page;
@@ -111,11 +135,14 @@
     }
 
 
-        public function careassessmentdetails($area="ltss", $page="programforms/careassessment/CareAssessmentDetails", $subpage="details", $partial="", $pagename = "CARE Assessment Details"){
+        public function careassessmentdetails($area="ltss", $page="programforms/careassessment/CareAssessmentDetails", $subpage="details", $partial="", $pagename = "CARE Assessment Details", $backlink = "programforms/careassessment"){
             if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
             {
                 show_404();
             }
+
+            //Layout
+            $data['backlink'] = $backlink;
 
             $data['area'] = $area;
             $data['page'] = $page;

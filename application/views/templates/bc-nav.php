@@ -9,8 +9,8 @@
             <div class="container-fluid">
                 <?php
 
-                if (isset($contextualnav)) {
-                    if( file_exists('application/views/'.$area.'/'.$contextualnav.'/shared/contextualnav/_BackLink.php')) {
+                if (isset($backlink)) {
+                    if( file_exists('application/views/'.$area.'/'.$backlink.'/shared/contextualnav/_BackLink.php')) {
                         require 'application/views/templates/contextualnav/backlink.php';
                     }
                 }

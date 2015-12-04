@@ -8,11 +8,18 @@
         header( "Location: $url" );
 	}
 
-    public function myhealthdata($area="clinical", $page="myhealthdata", $subpage="", $partial="", $pagename = "My Health Data"){
+    public function myhealthdata($area="clinical", $page="myhealthdata", $subpage="", $partial="", $pagename = "My Health Data", $layout = "_ThreeColumnRightAsideLayout", $contextualnav=""){
         if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
         {
             show_404();
         }
+
+        //Layout
+        $data['layout'] = $layout;
+
+        //Contextual Navigation
+        $data['contextualnav'] = $contextualnav;
+
 
         $data['area'] = $area;
         $data['page'] = $page;
@@ -25,11 +32,17 @@
         $this->load->view("templates/master-layout.php", $data);
     }
 
-    public function vitals($area="clinical", $page="vitals", $subpage="", $partial="", $pagename = "Vitals"){
+    public function vitals($area="clinical", $page="vitals", $subpage="", $partial="", $pagename = "Vitals", $layout = "_ThreeColumnRightAsideLayout", $contextualnav=""){
         if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
         {
             show_404();
         }
+
+        //Layout
+        $data['layout'] = $layout;
+
+        //Contextual Navigation
+        $data['contextualnav'] = $contextualnav;
 
         $data['area'] = $area;
         $data['page'] = $page;
@@ -42,11 +55,17 @@
         $this->load->view("templates/master-layout.php", $data);
     }
 
-    public function labresults($area="clinical", $page="labresults", $subpage="", $partial="", $pagename = "Lab Results"){
+    public function labresults($area="clinical", $page="labresults", $subpage="", $partial="", $pagename = "Lab Results", $layout = "_ThreeColumnRightAsideLayout", $contextualnav=""){
         if ( ! file_exists('application/views/'.$area.'/'.$page.'.php'))
         {
             show_404();
         }
+
+        //Layout
+        $data['layout'] = $layout;
+
+        //Contextual Navigation
+        $data['contextualnav'] = $contextualnav;
 
         $data['area'] = $area;
         $data['page'] = $page;

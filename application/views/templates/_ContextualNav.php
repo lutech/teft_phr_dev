@@ -20,9 +20,11 @@ require_once "application/views/templates/menuItem_builder.php";
                 require 'application/views/templates/contextualnav/relatedlinks.php';
             }
 
-            if( file_exists('application/views/'.$area.'/'.$contextualnav.'/shared/contextualnav/_HelpAndSupportLinks.php')) {
-                require 'application/views/templates/contextualnav/helpandsupportlinks.php';
-            }
+//            if( file_exists('application/views/'.$area.'/'.$contextualnav.'/shared/contextualnav/_HelpAndSupportLinks.php')) {
+//                require 'application/views/templates/contextualnav/helpandsupportlinks.php';
+//            }
+
+            require 'application/views/templates/contextualnav/helpandsupportlinks.php';
 
         ?>
     </ul>

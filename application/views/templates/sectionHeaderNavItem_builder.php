@@ -21,7 +21,7 @@ class SectionHeaderNavItem {
 
     public function RendersectionHeaderNavItem(){
 
-        $menuItemIcon = ($this->sectionHeaderNavItemIcon != "") ? $this->sectionHeaderNavItemIcon : "fa fa-arrow-left";
+        $menuItemIcon = ($this->sectionHeaderNavItemIcon != "") ? $this->sectionHeaderNavItemIcon : "fa fa-chevron-left";
         $menuItemUrl =  $this->sectionHeaderNavItemUrl;
         $menuItemLabel =  $this->sectionHeaderNavItemLabel;
         $hideLink = ($this->sectionHeaderNavItemHidden == true ) ? 'ui-hide' : "" ;
