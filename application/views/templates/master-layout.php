@@ -74,12 +74,18 @@
 
 		<!-- Main Header -->
 		<?php require 'header.php'; ?>
-        <div id="main-nav" class="row" >
-<!--            --><?// php require 'bc-nav.php'; ?>
-        </div>
-		<div id="main-body" class="container cl-mcont">
-			<!-- Main Content -->
-		<?php require "application/views/{$area}/{$page}.php";?>
+		<div id="main-body" class="cl-mcont tab-content">
+
+
+            <div id="main-content" class="tab-pane active in cont fade row">
+                <?php
+                if (!empty($layout)) {
+                    require "application/views/templates/{$layout}.php";
+                } else {
+                    require "application/views/templates/_SingleColumnLayout.php";
+                };
+                ?>
+            </div>
 <!--            <div class="md-overlay"></div>-->
 		</div>
 

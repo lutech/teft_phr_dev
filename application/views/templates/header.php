@@ -87,33 +87,23 @@ else {
 
         <div id="globalNavigationMenu" class="row no-margin">
             <div class="col-md-12">
-                <div class="col-sm-2">
+                <div class="col-sm-6">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="<?php echo base_url() . "index.php/home"; ?>" style="width: auto;">LTSS PHR</a>
+                        <a class="navbar-brand" href="<?php echo base_url() . "index.php/home"; ?>" style="width: auto;">
+                            LTSS TEFT PHR
+                        </a>
                     </div>
                 </div>
-                    <div class="col-sm-6 text-center">
-<!--                        <ul class="nav navbar-nav" style="float: none; display: inline-block">-->
-<!--                            --><?php
-//
-//                            foreach ($mainlinks as $link => $linkname) {
-//
-//                                $isactive = ($link == $area) ? 'class="active"' : "";
-//                                $badge = ($link == "submissions") ? '<span class="badge" style="background-color: #3276b1">3</span> ' : "";
-//                                echo "<li {$isactive}><a href=\"" . base_url() . "index.php/{$link}\">{$badge}{$linkname}</a></li>";
-//
-//                            }
-//
-//                            ?>
-<!--                        </ul>-->
-                    </div>
-                    <div class="col-sm-4">
-                        <ul id="profileNavigationMenu" class="pull-right">
+                    <div class="col-sm-6">
+                        <ul id="profileNavigationMenu" class="pull-right no-margin">
                             <li class="header">
                                 Adam Smith <span class="fa fa-user"></span>
                             </li>
                             <li>
-                                <a href="<?php echo base_url()?>index.php/home/myprofile">Profile</a>
+                                <a href="#">Division of Medicaid</a>
+                            </li>
+                            <li>
+                                <a href="<?php echo base_url()?>index.php/home/myprofile">My Profile</a>
                             </li>
                             <li>
                                 <a href="">Settings</a>
@@ -124,6 +114,10 @@ else {
         </div>
         <div class="row no-margin">
             <?php require 'tab-nav.php'; ?>
+        </div>
+
+        <div id="main-nav" class="row" >
+            <?php require 'bc-nav.php'; ?>
         </div>
         <!-- </div> /.container -->
     </div><!-- /.navbar -->

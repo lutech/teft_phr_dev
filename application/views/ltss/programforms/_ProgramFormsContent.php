@@ -1,5 +1,5 @@
 <div class="col-md-12">
-    <div class="form-toolbar container">
+    <div class="form-toolbar">
         <ul class="nav nav-tabs flat-tabs">
             <li class="">
                 <a href="#" data-trigger-form-lock="#cahpsSurvey" aria-expanded="true">
@@ -19,7 +19,7 @@
     </div>
 </div>
 <div class="col-md-12">
-    <div class="form-toolbar container">
+    <div class="form-toolbar">
         <ul class="nav nav-tabs flat-tabs">
             <li class="">
                 <a href="#" data-trigger-form-lock="#cahpsSurvey" aria-expanded="true">
@@ -39,7 +39,7 @@
     </div>
 </div>
 <div class="col-md-12">
-    <div class="form-toolbar container">
+    <div class="form-toolbar">
         <ul class="nav nav-tabs flat-tabs">
             <li class="">
                 <a href="#" data-trigger-form-lock="#cahpsSurvey" aria-expanded="true">
@@ -59,7 +59,7 @@
     </div>
 </div>
 <div class="col-md-12">
-    <div class="form-toolbar container">
+    <div class="form-toolbar">
         <ul class="nav nav-tabs flat-tabs">
             <li class="">
                 <a href="#" data-trigger-form-lock="#cahpsSurvey" aria-expanded="true">
@@ -79,7 +79,7 @@
     </div>
 </div>
 <div class="col-md-12">
-    <div class="form-toolbar container">
+    <div class="form-toolbar">
         <ul class="nav nav-tabs flat-tabs">
             <li class="">
                 <a href="#" data-trigger-form-lock="#cahpsSurvey" aria-expanded="true">

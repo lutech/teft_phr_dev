@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-12">
-        <div class="form-toolbar container tab-right">
+        <div class="form-toolbar tab-right">
             <ul class="nav nav-tabs flat-tabs">
                 <li>
                     <span class="toolbar-button-label" style="padding: 5px; border-bottom: 1px solid #b5b5b5"><strong>Jump to a section...</strong></span>

@@ -406,15 +406,16 @@
             if (slideoutMenu.hasClass("open")) {
                 slideoutMenu.animate({
                     left: "0px"
-                }, {
-                    complete: function() {
-                        console.log(this);
-                    }
                 });
             } else {
                 slideoutMenu.animate({
                     left: -slideoutMenuWidth
-                }, 250);
+                }, {
+                    duration: 250,
+                    complete: function() {
+                        $(this).scrollTop(0);
+                    }
+                });
             }
         });
     });

@@ -1,5 +1,5 @@
 <div class="col-md-12">
-    <div class="form-toolbar container">
+    <div class="form-toolbar">
         <ul class="nav nav-tabs flat-tabs">
             <li>
                 <a href="#" aria-expanded="true">

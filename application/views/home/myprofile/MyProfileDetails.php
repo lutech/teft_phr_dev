@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-12">
-        <div class="form-toolbar container">
+        <div class="form-toolbar">
             <ul class="nav nav-tabs flat-tabs">
 <!--                <li class="">-->
 <!--                    <a data-trigger-form-unlock="#myprofile" href="#"  aria-expanded="false";>-->
